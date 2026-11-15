@@ -7,6 +7,18 @@
 
 INPUT=$(cat 2>/dev/null || true)
 
+emit() {
+  ESC=$(printf '%s' "$1" | sed 's/\\/\\\\/g; s/"/\\"/g')
+  printf '{"hookSpecificOutput":{"hookEventName":"SessionStart","additionalContext":"%s"}}\n' "$ESC"
+}
+
+# Phiên chạy trên cloud (app Claude): thư mục hiện tại là máy ảo, không phải folder của người dùng,
+# và mỗi phiên là một máy mới nên không nhớ được "đã mời". Chỉ nhắc AI tự xét điều kiện.
+if [ "${CLAUDE_CODE_REMOTE:-}" = "true" ]; then
+  emit "[AI Team Starter] Chỉ khi phiên này làm việc trên một folder của người dùng (folder trên máy họ đã kết nối, hoặc repo) mà folder đó chưa có AGENTS.md / CLAUDE.md: ở câu trả lời đầu tiên, mời họ một câu ngắn dựng file luật tối thiểu bằng skill bat-dau (khoảng 2 phút, tối đa 5 câu hỏi). Nếu phiên không có folder nào của người dùng, folder đã có file luật, hoặc người dùng từng từ chối, thì không nhắc gì."
+  exit 0
+fi
+
 # Thư mục đang làm việc: ưu tiên trường "cwd" trong JSON đầu vào, rồi biến môi trường, rồi $PWD.
 DIR=$(printf '%s' "$INPUT" | sed -n 's/.*"cwd"[[:space:]]*:[[:space:]]*"\([^"]*\)".*/\1/p' | head -n 1)
 [ -n "$DIR" ] || DIR="${CLAUDE_PROJECT_DIR:-$PWD}"
@@ -31,7 +43,5 @@ printf '%s\n' "$DIR" > "$DATA/da-moi/$KEY" 2>/dev/null || exit 0
 
 MSG="[AI Team Starter] Folder này chưa có file luật (AGENTS.md / CLAUDE.md). Ở câu trả lời đầu tiên của phiên, trước hoặc cùng lúc trả lời yêu cầu của người dùng, hãy mời họ một câu ngắn: dựng file luật tối thiểu bằng skill bat-dau (khoảng 2 phút, hỏi tối đa 5 câu). Viết lời mời bằng ngôn ngữ người dùng đang dùng. Nếu họ đồng ý thì chạy skill bat-dau. Nếu họ từ chối hoặc bỏ qua thì không nhắc lại; chỉ nói họ có thể gõ /bat-dau khi cần. Lời mời này chỉ xuất hiện một lần cho folder này."
 
-# In JSON chuẩn cho SessionStart (thoát dấu nháy kép và gạch chéo ngược trong thông điệp).
-ESC=$(printf '%s' "$MSG" | sed 's/\\/\\\\/g; s/"/\\"/g')
-printf '{"hookSpecificOutput":{"hookEventName":"SessionStart","additionalContext":"%s"}}\n' "$ESC"
+emit "$MSG"
 exit 0
