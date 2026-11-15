@@ -31,7 +31,7 @@ Người dùng đã có cấu trúc riêng đang chạy tốt → giữ cấu tr
 ## Bước 2 — Làm sau khi được đồng ý
 
 1. Người dùng có thể đồng ý tất cả, một phần, hoặc sửa đề xuất.
-2. Chỉ dùng thao tác **di chuyển**. Không xoá. Trùng tên ở đích → thêm hậu tố ngày, không ghi đè.
+2. Chỉ dùng thao tác **di chuyển**. Không xoá. **Giữ nguyên tên file**; chỉ đổi tên khi trùng tên ở đích (thêm hậu tố ngày, không ghi đè) hoặc khi người dùng đồng ý một đề xuất đổi tên cụ thể đã nằm trong bảng ở Bước 1.
 3. Đếm số file trước và sau; hai số phải bằng nhau.
 4. Ghi phần **Thư mục** trong `AGENTS.md` cho khớp cấu trúc thật (nếu chưa có `AGENTS.md`, mời chạy `bat-dau`).
 

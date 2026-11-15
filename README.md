@@ -29,7 +29,7 @@ Mở phiên mới trong folder bạn muốn dùng.
 codex plugin marketplace add LeHungViet/ai-team-starter
 ```
 
-Rồi cài **AI Team Starter** trong ứng dụng Codex. Codex chạy bước setup ngay sau khi cài.
+Rồi cài **AI Team Starter** trong ứng dụng Codex — Codex chạy bước setup ngay sau khi cài. Cài bằng dòng lệnh cũng được: `codex plugin add ai-team@ai-team-starter`. Trên Codex, skill hiện với tên `ai-team:bat-dau`, `ai-team:them-tro-ly`…; hook mời setup chỉ chạy sau khi bạn duyệt (trust) hook của plugin.
 
 ## Cài xong thì sao
 
@@ -40,7 +40,7 @@ Rồi cài **AI Team Starter** trong ứng dụng Codex. Codex chạy bước se
    - **`CLAUDE.md`** — chỉ có dòng `@AGENTS.md` và vài dòng riêng của Claude. Sửa luật ở `AGENTS.md` là cả hai cùng thấy.
 4. Từ chối cũng được; lúc nào cần thì gõ `/bat-dau`.
 
-Không thấy lời mời (ví dụ trên Windows, hoặc nền tảng chưa chạy hook)? Gõ `/bat-dau` (Claude) hoặc `$bat-dau` (Codex), hoặc nói "dựng file luật cho folder này".
+Không thấy lời mời (ví dụ trên Windows, hoặc nền tảng chưa chạy hook)? Gõ `/bat-dau` (Claude) hoặc `$ai-team:bat-dau` (Codex), hoặc nói "dựng file luật cho folder này".
 
 ## Các skill
 
