@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "description": "AI Team Starter — dựng đội AI riêng trong folder làm việc: file luật AGENTS.md/CLAUDE.md, trợ lý có tên, dự án có nguồn sự thật. Cài xong, AI tự mời bạn setup.",
   "author": { "name": "Agent Pro", "url": "https://agentpro.tech" },
-  "homepage": "https://github.com/__OWNER__/ai-team-starter",
-  "repository": "https://github.com/__OWNER__/ai-team-starter",
+  "homepage": "https://github.com/LeHungViet/ai-team-starter",
+  "repository": "https://github.com/LeHungViet/ai-team-starter",
   "license": "MIT",
   "keywords": ["onboarding", "agents-md", "claude-md", "ai-team", "vietnamese"]
 }

@@ -10,23 +10,23 @@ Cài xong, AI tự mời bạn trả lời vài câu (tối đa 5), rồi viết
 
 ## Cài đặt
 
-> Thay `__OWNER__` bằng tài khoản GitHub chứa repo này.
+> Thay `LeHungViet` bằng tài khoản GitHub chứa repo này.
 
 **Claude Code**
 
 ```
-/plugin marketplace add __OWNER__/ai-team-starter
+/plugin marketplace add LeHungViet/ai-team-starter
 /plugin install ai-team@ai-team-starter
 ```
 
 Mở phiên mới trong folder bạn muốn dùng.
 
-**Claude desktop:** thêm marketplace `__OWNER__/ai-team-starter` trong phần quản lý plugin, cài plugin **ai-team**, rồi chọn folder làm việc.
+**Claude desktop:** thêm marketplace `LeHungViet/ai-team-starter` trong phần quản lý plugin, cài plugin **ai-team**, rồi chọn folder làm việc.
 
 **Codex**
 
 ```
-codex plugin marketplace add __OWNER__/ai-team-starter
+codex plugin marketplace add LeHungViet/ai-team-starter
 ```
 
 Rồi cài **AI Team Starter** trong ứng dụng Codex. Codex chạy bước setup ngay sau khi cài.
