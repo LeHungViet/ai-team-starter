@@ -16,9 +16,9 @@ description: Rà folder làm việc xem có đang chạy đúng luật trong AGE
 | 3 | Độ dài | `AGENTS.md` dưới 200 dòng. |
 | 4 | Chỗ giữ chỗ còn sót | Không còn `{{` hay `[TÊN` trong file luật, BRIEF, file trợ lý. |
 | 5 | Luật mâu thuẫn | Đọc các điều và bài học; chỉ ra cặp nào nói ngược nhau. |
-| 6 | Trợ lý | Mỗi hàng trong bảng **Trợ lý** có file `tro-ly/<ten>.md`; mỗi file có hàng trong bảng. |
+| 6 | Trợ lý | Mỗi hàng trong bảng **Trợ lý** có file `tro-ly/<ten>.md` (trừ hàng có vai "Trợ lý chính" — định nghĩa ngay trong `AGENTS.md`); mỗi file trong `tro-ly/` có hàng trong bảng. |
 | 7 | Dự án | Mỗi hàng trong bảng **Dự án** có `BRIEF.md`. Dự án có code (có `package.json`, `.git`, `requirements.txt`, `Dockerfile`… hoặc BRIEF nhắc tới repo) mà thiếu khối NGUỒN SỰ THẬT → báo. Ngày xác minh quá 90 ngày → nhắc. |
-| 8 | Gốc folder sạch | Gốc chỉ có file luật và các thư mục trong mục **Thư mục** của `AGENTS.md`; liệt kê thứ nằm ngoài. |
+| 8 | Gốc folder sạch | Gốc chỉ có file luật và các thư mục trong mục **Thư mục** của `AGENTS.md`; liệt kê thứ nằm ngoài. Thư mục được nhắc mà chưa tạo thì không phải lỗi (tạo khi cần). |
 | 9 | Ghi chú cạnh BRIEF | Trong thư mục dự án có file kiểu "ĐỌC-TRƯỚC", "SUPERSEDED", "NOTE-moved" nói nguồn đã đổi mà BRIEF không đổi → báo mức cao. |
 
 ## Báo cáo

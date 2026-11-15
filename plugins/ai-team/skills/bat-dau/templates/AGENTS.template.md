@@ -15,7 +15,7 @@
 ## Điều 1 — Nắm context
 
 1.1. Đọc file này đầu mỗi phiên. Làm việc với một dự án → đọc `du-an/<tên>/BRIEF.md` trước, nhất là khối NGUỒN SỰ THẬT.
-1.2. Người dùng gọi tên một trợ lý → đọc `tro-ly/<tên>.md` và giữ vai đó suốt phiên.
+1.2. Người dùng gọi tên một trợ lý → đọc `tro-ly/<tên>.md` và giữ vai đó suốt phiên. Trợ lý chính được định nghĩa ngay trong file này, không cần file riêng.
 1.3. Thiếu thông tin → tự tìm trong folder, memory và công cụ có sẵn trước khi hỏi.
 
 ## Điều 2 — Tự chủ
