@@ -1,30 +1,42 @@
 ---
 name: them-tro-ly
-description: Thêm một trợ lý AI có tên, vai và cách xưng hô riêng (ví dụ trợ lý marketing, tài chính, pháp lý) vào folder làm việc, để sau này chỉ cần gọi tên là AI vào đúng vai. Dùng khi người dùng nói "thêm trợ lý", "thêm agent", "tạo nhân vật AI", "tôi cần một người lo marketing", "add an assistant", "add an agent", "create a persona".
+description: Thêm một trợ lý AI có tên, vai và cách xưng hô riêng (ví dụ trợ lý marketing, tài chính, pháp lý) vào folder làm việc, theo format chuẩn — mỗi trợ lý một thư mục có VAI.md đủ 9 mục, bai-hoc.md và ket-qua — để sau này chỉ cần gọi tên là AI vào đúng vai. Dùng khi người dùng nói "thêm trợ lý", "thêm agent", "tạo nhân vật AI", "tôi cần một người lo marketing", "add an assistant", "add an agent", "create a persona".
 ---
 
-# them-tro-ly — Thêm một trợ lý có tên riêng
+# them-tro-ly — Thêm một trợ lý theo format chuẩn
 
-Kết quả: một file `tro-ly/<ten>.md` và một dòng mới trong bảng **Trợ lý** của `AGENTS.md`.
+Kết quả:
 
-Chưa có `AGENTS.md` → mời chạy `bat-dau` trước, rồi quay lại.
+```
+tro-ly/<thư-mục>/
+├── VAI.md       ← định nghĩa vai, đủ 9 mục
+├── bai-hoc.md   ← bài học riêng của trợ lý
+└── ket-qua/     ← kết quả trợ lý làm ra
+```
 
-## Bước 1 — Hỏi (gộp tối đa 2 lượt)
+và một dòng mới trong **Danh bạ trợ lý** của `START-HERE.md`, nhánh mới trong cây thư mục ở đó.
 
-1. **Trợ lý lo việc gì?** Nếu người dùng chưa rõ, đưa vài vai trong `vai-mau.md` (cùng thư mục) làm gợi ý; họ có thể tự nghĩ vai khác.
-2. **Tên gì?** Tự nghĩ 2–3 tên hợp vai và ngữ cảnh người dùng để gợi ý; luôn cho người dùng tự đặt. Không dùng danh sách tên cố định.
+Chưa có `AGENTS.md` / `START-HERE.md` → mời chạy `bat-dau` trước, rồi quay lại.
+
+## Bước 1 — Hỏi (gộp tối đa 2 lượt, bỏ câu đã biết)
+
+1. **Trợ lý lo việc gì?** Chưa rõ → đưa vài vai trong `vai-mau.md` (cùng thư mục) làm gợi ý; người dùng có thể tự nghĩ vai khác.
+2. **Tên gì?** Tự nghĩ 2–3 tên hợp vai và ngữ cảnh để gợi ý; luôn cho người dùng tự đặt.
 3. **Xưng hô thế nào?** Ngang hàng hay trên–dưới.
-4. **Khi nào thì gọi trợ lý này?** Một câu.
+4. **Khi nào gọi, báo cáo cho ai?** Một câu (mặc định báo cáo cho người dùng; có trợ lý chính thì có thể báo cáo qua trợ lý chính).
 
-Người dùng mô tả đủ ngay từ đầu ("thêm Mai lo marketing, xưng em") → không hỏi lại phần đã có.
+## Bước 2 — Viết thư mục trợ lý
 
-## Bước 2 — Viết file
+1. Tên thư mục: tên trợ lý viết thường, không dấu, nối gạch ngang (`Mai` → `tro-ly/mai/`). Trùng → hỏi có muốn sửa trợ lý cũ không; không ghi đè khi chưa đồng ý.
+2. `VAI.md` từ `templates/VAI.template.md`. **Đủ 9 mục, đúng thứ tự, đúng tên mục**: Danh tính · Gọi khi · Tính cách · Chuyên môn · Cách làm việc · Giao tiếp · Không làm · Nguyên tắc riêng · Kết quả để ở đâu.
+   - Viết **cụ thể theo vai**, không chung chung. Ví dụ trợ lý tài chính: "luôn nêu giả định của mô hình số", "đưa ba kịch bản tốt / vừa / xấu", "Không làm: không tư vấn đầu tư cá nhân".
+   - Mục chưa đủ thông tin → tự đề xuất nội dung hợp vai và nói rõ với người dùng là đề xuất; không để trống.
+   - Dưới 100 dòng.
+3. `bai-hoc.md` từ `templates/bai-hoc.template.md`; tạo thư mục `ket-qua/` (đặt `.gitkeep`).
+4. `START-HERE.md`: thêm một hàng vào **Danh bạ trợ lý** `| Tên | Vai | Xưng hô | Gọi khi | tro-ly/<thư-mục>/ |` (thay dòng "(chưa có …)" nếu có), và cập nhật cây thư mục cho khớp.
 
-1. Tên file: tên trợ lý viết thường, không dấu, nối bằng gạch ngang (`Mai` → `tro-ly/mai.md`). Trùng tên → hỏi người dùng có muốn sửa trợ lý cũ không; không ghi đè khi chưa đồng ý.
-2. Dựa vào `templates/tro-ly.template.md`. Viết phần chuyên môn và cách làm **cụ thể theo vai** (trợ lý tài chính: luôn nêu giả định của mô hình số, có ba kịch bản…), không viết chung chung. Dưới 80 dòng.
-3. Thêm một hàng vào bảng **Trợ lý** trong `AGENTS.md`: `| Tên | Vai | Xưng hô | Gọi khi |`. Nếu bảng đang có dòng "(chưa có …)" thì thay dòng đó.
+## Bước 3 — Kiểm rồi báo
 
-## Bước 3 — Báo
-
-- Báo 2–3 dòng: đã tạo trợ lý nào, gọi thế nào ("Mai ơi, …").
-- Mời thử ngay: gọi tên trợ lý với một việc nhỏ. Khi được gọi, đọc `tro-ly/<ten>.md` và giữ vai, giọng, cách xưng hô suốt phiên.
+- Đọc lại `VAI.md`: đủ 9 mục, không còn `{{`.
+- Báo 2–3 dòng: đã tạo trợ lý nào, gọi thế nào ("Mai ơi, …"), kết quả sẽ nằm ở đâu.
+- Mời thử ngay một việc nhỏ. Khi được gọi: đọc `VAI.md` + `bai-hoc.md`, giữ vai, giọng, xưng hô suốt phiên.

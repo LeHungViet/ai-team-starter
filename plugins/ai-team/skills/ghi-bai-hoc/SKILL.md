@@ -21,7 +21,7 @@ description: Ghi ngay một bài học (thường rút ra từ một sai lầm h
 |---|---|
 | Mọi việc trong folder | `bo-nho/bai-hoc.md` |
 | Một dự án | `du-an/<tên>/bai-hoc.md` (chưa có thì tạo; bẫy kỹ thuật thì thêm vào "Bẫy đã biết" trong BRIEF) |
-| Một trợ lý | `tro-ly/<tên>.md`, mục "Nguyên tắc riêng" |
+| Một trợ lý | `tro-ly/<tên>/bai-hoc.md` |
 
 Chưa có `bo-nho/` → tạo theo mẫu `../bat-dau/templates/bo-nho/`.
 
@@ -29,7 +29,7 @@ Chưa có `bo-nho/` → tạo theo mẫu `../bat-dau/templates/bo-nho/`.
 
 - Đọc file đích trước. Trùng → sửa dòng cũ. Mâu thuẫn → hỏi người dùng giữ bên nào.
 - Xoá dòng "_(chưa có)_" khi thêm bài học đầu tiên.
-- Người dùng muốn đây là **luật hiến pháp** (đúng cho mọi việc, phải luôn nằm trong `AGENTS.md`) → nhắc lại luật một dòng và hỏi duyệt. Được duyệt: chép `AGENTS.md` vào `archive/AGENTS-<YYYY-MM-DD>.md`, ghi vào điều phù hợp, giữ file dưới 200 dòng.
+- Người dùng muốn đây là **luật hiến pháp** (đúng cho mọi việc, phải luôn nằm trong `AGENTS.md`) → nhắc lại luật một dòng và hỏi duyệt. Được duyệt: chép `AGENTS.md` vào `archive/AGENTS-<YYYY-MM-DD>.md`, ghi vào điều phù hợp, giữ file dưới 120 dòng.
 
 ## Bước 4 — Báo
 

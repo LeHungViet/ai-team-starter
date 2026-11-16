@@ -9,11 +9,13 @@ description: Dựng cấu trúc thư mục gọn cho folder làm việc, hoặc 
 
 ```
 <folder>/
-├── AGENTS.md        ← hiến pháp (bản luật duy nhất)
-├── CLAUDE.md        ← chỉ import AGENTS.md
-├── bo-nho/          ← BO-NHO.md, bai-hoc.md, nhat-ky/
-├── du-an/<ten>/     ← mỗi dự án một thư mục, có BRIEF.md + bai-hoc.md
-├── tro-ly/          ← mỗi trợ lý một file
+├── AGENTS.md        ← hiến pháp (luật tổng quát)
+├── CLAUDE.md        ← @AGENTS.md + @START-HERE.md
+├── START-HERE.md    ← bản đồ folder: cây, việc gì đọc gì, danh bạ trợ lý, dự án
+├── nguoi-dung/      ← ve-toi.md, van-phong.md
+├── bo-nho/          ← BO-NHO.md, bai-hoc.md, chu-de/, nhat-ky/
+├── tro-ly/<tên>/    ← VAI.md, bai-hoc.md, ket-qua/
+├── du-an/<tên>/     ← BRIEF.md, bai-hoc.md + mọi file của dự án
 ├── tai-lieu/        ← tài liệu dùng chung, không thuộc dự án nào
 └── archive/         ← thứ đã dọn; không xoá gì
 ```
@@ -34,7 +36,7 @@ Người dùng đã có cấu trúc riêng đang chạy tốt → giữ cấu tr
 1. Người dùng có thể đồng ý tất cả, một phần, hoặc sửa đề xuất.
 2. Chỉ dùng thao tác **di chuyển**. Không xoá. **Giữ nguyên tên file**; chỉ đổi tên khi trùng tên ở đích (thêm hậu tố ngày, không ghi đè) hoặc khi người dùng đồng ý một đề xuất đổi tên cụ thể đã nằm trong bảng ở Bước 1.
 3. Đếm số file trước và sau; hai số phải bằng nhau.
-4. Ghi phần **Thư mục** trong `AGENTS.md` cho khớp cấu trúc thật (nếu chưa có `AGENTS.md`, mời chạy `bat-dau`).
+4. Cập nhật **cây thư mục** trong `START-HERE.md` cho khớp cấu trúc thật, kể cả thư mục riêng người dùng giữ lại (mỗi nhánh một dòng giải thích). Chưa có `START-HERE.md` → mời chạy `bat-dau`.
 
 ## Bước 3 — Báo
 

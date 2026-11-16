@@ -46,8 +46,10 @@ Rồi cài **AI Team Starter** trong ứng dụng Codex — Codex chạy bước
 2. Đồng ý → AI hỏi tối đa 5 câu: gọi bạn là gì, bạn làm gì, muốn AI làm việc kiểu nào, ngôn ngữ, có đặt tên cho trợ lý chính không.
 3. AI tạo:
    - **`AGENTS.md`** — hiến pháp: luật tổng quát duy nhất (Codex và Claude đều đọc). AI không tự sửa file này.
-   - **`CLAUDE.md`** — chỉ có dòng `@AGENTS.md` và vài dòng riêng của Claude. Sửa luật ở `AGENTS.md` là cả hai cùng thấy.
-   - **`bo-nho/`** — bộ nhớ: bài học, nhật ký từng phiên, việc đang dở. Cuối mỗi việc AI chạy `luu-phien` để ghi vào đây.
+   - **`CLAUDE.md`** — chỉ `@AGENTS.md` + `@START-HERE.md` và vài dòng riêng của Claude.
+   - **`START-HERE.md`** — bản đồ folder: cây thư mục, việc gì đọc file nào, danh bạ trợ lý, bảng dự án. AI nhìn vào đây để biết tìm gì ở đâu.
+   - **`nguoi-dung/`** — hồ sơ của bạn (`ve-toi.md`) và giọng văn khi AI viết thay (`van-phong.md`).
+   - **`bo-nho/`** — bộ nhớ: bài học, kiến thức theo chủ đề, nhật ký từng phiên, việc đang dở. Cuối mỗi việc AI chạy `luu-phien` để ghi vào đây.
 4. Từ chối cũng được; lúc nào cần thì gõ `/bat-dau`.
 
 Không thấy lời mời (ví dụ trên Windows, hoặc nền tảng chưa chạy hook)? Gõ `/bat-dau` (Claude) hoặc `$ai-team:bat-dau` (Codex), hoặc nói "dựng file luật cho folder này".
@@ -56,35 +58,46 @@ Không thấy lời mời (ví dụ trên Windows, hoặc nền tảng chưa ch�
 
 | Skill | Làm gì |
 |---|---|
-| `bat-dau` | Dựng (hoặc cập nhật) `AGENTS.md` + `CLAUDE.md`. **Bắt buộc, chạy đầu tiên.** |
-| `them-tro-ly` | Thêm trợ lý có tên, vai, cách xưng hô riêng (marketing, tài chính, pháp lý…). Gọi tên là AI vào vai. |
+| `bat-dau` | Dựng (hoặc nâng cấp) bộ khung: `AGENTS.md`, `CLAUDE.md`, `START-HERE.md`, `nguoi-dung/`, `bo-nho/`. **Chạy đầu tiên.** |
+| `them-tro-ly` | Thêm trợ lý theo **format chuẩn 9 mục** (`VAI.md`) + `bai-hoc.md` + `ket-qua/`. Gọi tên là AI vào vai. |
 | `them-du-an` | Tạo dự án với `BRIEF.md`; dự án có code thì kèm khối **NGUỒN SỰ THẬT**. |
 | `sap-xep-thu-muc` | Dựng hoặc dọn cấu trúc thư mục. Đề xuất trước, chỉ chuyển khi bạn đồng ý, **không bao giờ xoá**. |
-| `luu-phien` | Lưu phiên: nhật ký, bài học (chung / dự án / trợ lý), việc đang dở. AI tự chạy cuối mỗi việc; hook nhắc lưu bù phiên bị quên. |
+| `luu-phien` | Lưu phiên: nhật ký, bài học (chung / dự án / trợ lý), kiến thức theo chủ đề, điều mới về bạn, việc đang dở. AI tự chạy cuối mỗi việc; hook nhắc lưu bù phiên bị quên. |
 | `ghi-bai-hoc` | Ghi ngay một bài học rút từ sai lầm vào bộ nhớ (không vào `AGENTS.md`). |
 | `don-bo-nho` | Gộp bài học trùng, tóm tắt nhật ký cũ theo tháng, đề xuất bài học nào nên nâng thành luật. Không xoá. |
-| `kiem-tra` | Rà xem folder có đang chạy đúng luật không. Chỉ đọc. |
+| `kiem-tra` | Rà xem folder có đúng luật và đúng bản đồ không (START-HERE khớp cây thật, trợ lý đủ 9 mục…). Chỉ đọc. |
 
 ## Cấu trúc sau khi dùng đủ
 
 ```
 folder-cua-ban/
-├── AGENTS.md          ← hiến pháp: luật tổng quát (bản duy nhất)
-├── CLAUDE.md          ← @AGENTS.md
+├── AGENTS.md            ← hiến pháp: luật tổng quát (bản duy nhất)
+├── CLAUDE.md            ← @AGENTS.md + @START-HERE.md
+├── START-HERE.md        ← bản đồ folder: cây, việc gì đọc gì, danh bạ trợ lý, dự án
+├── nguoi-dung/
+│   ├── ve-toi.md        ← bạn là ai, công việc, cách nghĩ, mục tiêu
+│   └── van-phong.md     ← giọng văn khi AI viết thay
 ├── bo-nho/
-│   ├── BO-NHO.md      ← mục lục + việc đang dở
-│   ├── bai-hoc.md     ← bài học chung
-│   └── nhat-ky/       ← mỗi phiên một file
-├── tro-ly/mai.md      ← mỗi trợ lý một file
+│   ├── BO-NHO.md        ← mục lục + việc đang dở
+│   ├── bai-hoc.md       ← bài học chung
+│   ├── chu-de/          ← kiến thức dùng lại, mỗi chủ đề một file
+│   └── nhat-ky/         ← mỗi phiên một file
+├── tro-ly/mai/
+│   ├── VAI.md           ← định nghĩa vai, format chuẩn 9 mục
+│   ├── bai-hoc.md       ← bài học riêng của trợ lý
+│   └── ket-qua/         ← kết quả trợ lý làm ra
 ├── du-an/<ten>/
-│   ├── BRIEF.md       ← mục tiêu, trạng thái, NGUỒN SỰ THẬT
-│   └── bai-hoc.md     ← bài học riêng dự án
+│   ├── BRIEF.md         ← mục tiêu, trạng thái, NGUỒN SỰ THẬT
+│   └── bai-hoc.md       ← bài học riêng dự án
 ├── tai-lieu/
-└── archive/           ← thứ đã dọn; không xoá gì
+└── archive/             ← thứ đã dọn; không xoá gì
 ```
+
+**Format chuẩn của trợ lý (`VAI.md`)** — 9 mục, không bỏ mục nào: Danh tính · Gọi khi · Tính cách · Chuyên môn · Cách làm việc · Giao tiếp · Không làm · Nguyên tắc riêng · Kết quả để ở đâu.
 
 ## Vì sao làm như vậy
 
+- **Hiến pháp, bản đồ, bộ nhớ — mỗi thứ một chỗ.** `AGENTS.md` là luật; `START-HERE.md` là bản đồ để AI biết tìm gì ở đâu; `nguoi-dung/` là hồ sơ; `bo-nho/` là trí nhớ. Hiến pháp ngắn nên AI đọc kỹ; bản đồ đổi theo cấu trúc mà không phải đụng vào luật.
 - **Một file luật, hai nền tảng.** Claude Code đọc được `AGENTS.md`; `CLAUDE.md` chỉ cần import nó. Không phải giữ hai bản luật rồi để chúng lệch nhau.
 - **Hiến pháp tách khỏi bộ nhớ.** `AGENTS.md` chỉ giữ luật tổng quát, ngắn, ít đổi — AI không tự sửa. Bài học và nhật ký nằm trong `bo-nho/` và `bai-hoc.md` của từng dự án; bài học lặp lại nhiều lần mới được đề xuất nâng thành luật.
 - **Bộ nhớ riêng, không phó mặc memory có sẵn.** Memory của Claude/Codex không chia sẻ giữa hai nền tảng, có thể bỏ sót, và phiên sau vẫn lặp lỗi. Nên cuối mỗi việc AI chạy `luu-phien`; phiên nào kết thúc mà quên lưu thì hook nhắc lưu bù ở phiên sau (Claude Code, Codex sau khi duyệt hook).
@@ -114,19 +127,22 @@ folder-cua-ban/
 ```
 your-folder/
 ├── AGENTS.md          ← constitution: general rules only (the single rules file)
-├── CLAUDE.md          ← @AGENTS.md
+├── CLAUDE.md          ← @AGENTS.md + @START-HERE.md
+├── START-HERE.md      ← folder map: tree, task → file, assistants, projects
+├── about-me/          ← profile.md, voice.md
 ├── memory/
 │   ├── MEMORY.md      ← index + open items
 │   ├── lessons.md     ← general lessons
+│   ├── topics/        ← reusable knowledge by topic
 │   └── sessions/      ← one log per session
-├── assistants/mia.md  ← one file per named assistant
+├── assistants/mia/    ← ROLE.md (9-section standard format), lessons.md, outputs/
 ├── projects/<name>/
 │   ├── BRIEF.md       ← goal, status, SOURCE OF TRUTH
 │   └── lessons.md     ← project lessons
 └── archive/           ← cleaned-up items; nothing is deleted
 ```
 
-**Skills:** `setup` (rules + memory, runs first) · `add-assistant` · `add-project` · `organize-folder` (proposes first, never deletes) · `save-session` (log, lessons, open items — the agent runs it at the end of each task) · `add-lesson` · `tidy-memory` (merge, summarize, propose rule promotions) · `health-check` (read-only).
+**Skills:** `setup` (rules, map, profile, memory — runs first) · `add-assistant` (9-section standard format) · `add-project` · `organize-folder` (proposes first, never deletes) · `save-session` (log, lessons, open items — the agent runs it at the end of each task) · `add-lesson` · `tidy-memory` (merge, summarize, propose rule promotions) · `health-check` (read-only).
 
 **Why this design**
 

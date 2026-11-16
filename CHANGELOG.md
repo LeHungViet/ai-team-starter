@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.0 — 2026-11-16
+- **`START-HERE.md` — bản đồ folder** / folder map: cây thư mục, bảng "việc gì → đọc file nào", danh bạ trợ lý, bảng dự án (chuyển ra khỏi `AGENTS.md`). `CLAUDE.md` import `@AGENTS.md` + `@START-HERE.md`. Skill đổi cấu trúc tự cập nhật bản đồ.
+- **Hồ sơ người dùng** `nguoi-dung/` (`ve-toi.md`, `van-phong.md`) / `about-me/` (`profile.md`, `voice.md`); `AGENTS.md` chỉ giữ 2 dòng tóm tắt.
+- **Trợ lý theo format chuẩn**: mỗi trợ lý một thư mục `tro-ly/<tên>/` (`VAI.md` 9 mục, `bai-hoc.md`, `ket-qua/`) / `assistants/<name>/` (`ROLE.md`, `lessons.md`, `outputs/`). Trợ lý chính cũng có thư mục.
+- **Kiến thức theo chủ đề** `bo-nho/chu-de/` / `memory/topics/`; `luu-phien` / `save-session` tách bài học và kiến thức.
+- `kiem-tra` / `health-check`: bản đồ khớp cây thật, trợ lý đủ 9 mục, hiến pháp dưới 120 dòng. `bat-dau` / `setup` nâng cấp folder bản cũ.
+
 ## 0.2.2 — 2026-11-16
 - Sửa: mô tả skill `ghi-bai-hoc` / `add-lesson` có dấu `<…>` khiến claude.ai bỏ qua skill khi đồng bộ. Mô tả skill không được chứa `<` hoặc `>`.
 

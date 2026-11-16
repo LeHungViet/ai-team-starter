@@ -1,4 +1,5 @@
 @AGENTS.md
+@START-HERE.md
 
 ## Riêng cho Claude
 

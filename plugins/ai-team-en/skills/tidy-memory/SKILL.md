@@ -19,6 +19,12 @@ Count: session logs per month, lines in `memory/lessons.md` and each `projects/*
 - Two lines that contradict → ask the user which to keep (one question, list both).
 - A lesson that really belongs to one project → move it to `projects/<name>/lessons.md`.
 - A lesson no longer valid (project closed, tool dropped) → move it under a `## No longer in effect` section at the end of the file; don't delete it.
+- Do the same for `assistants/*/lessons.md`.
+
+## Step 2b — Topics
+
+- `memory/topics/`: merge files on the same topic (originals to `archive/`), fix the index in `MEMORY.md`, mark outdated parts.
+- A "lesson" that is really knowledge (not a rule) → move it to the right topic file.
 
 ## Step 3 — Session logs
 
@@ -30,10 +36,11 @@ For each month with logs **older than 30 days**:
 ## Step 4 — Index and open items
 
 - `memory/MEMORY.md`: remove open items that are done (check the logs), fix broken links, update the line "Last tidy-up: YYYY-MM-DD".
+- `START-HERE.md`: the tree matches the real folder; the assistant directory and project table match the real folders.
 
 ## Step 5 — Propose rule promotions
 
-Lessons that keep repeating **or** hold for all work → list at most 3 proposals: "Promote to a rule in AGENTS.md: <rule>". Write to `AGENTS.md` only when the user approves each line; before writing, copy `AGENTS.md` to `archive/AGENTS-<YYYY-MM-DD>.md`, put the rule in the right article, keep the file under 200 lines, then move that lesson line to "No longer in effect" with the note "promoted to a rule".
+Lessons that keep repeating **or** hold for all work → list at most 3 proposals: "Promote to a rule in AGENTS.md: <rule>". Write to `AGENTS.md` only when the user approves each line; before writing, copy `AGENTS.md` to `archive/AGENTS-<YYYY-MM-DD>.md`, put the rule in the right article, keep the file under 120 lines, then move that lesson line to "No longer in effect" with the note "promoted to a rule".
 
 ## Step 6 — Report
 

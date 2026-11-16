@@ -21,7 +21,7 @@ Format: `- <rule> — <why> — <YYYY-MM-DD>`
 |---|---|
 | All work in the folder | `memory/lessons.md` |
 | One project | `projects/<name>/lessons.md` (create if missing; technical traps also go under "Known traps" in the BRIEF) |
-| One assistant | `assistants/<name>.md`, section "Own principles" |
+| One assistant | `assistants/<name>/lessons.md` |
 
 No `memory/` yet → create it from the templates in `../setup/templates/memory/`.
 
@@ -29,7 +29,7 @@ No `memory/` yet → create it from the templates in `../setup/templates/memory/
 
 - Read the target file first. Duplicate → edit the old line. Contradiction → ask which to keep.
 - Remove the "_(none yet)_" line when adding the first lesson.
-- The user wants this to be a **constitutional rule** (true for all work, must always sit in `AGENTS.md`) → restate the rule in one line and ask for approval. Approved: copy `AGENTS.md` to `archive/AGENTS-<YYYY-MM-DD>.md`, add the rule to the right article, keep the file under 200 lines.
+- The user wants this to be a **constitutional rule** (true for all work, must always sit in `AGENTS.md`) → restate the rule in one line and ask for approval. Approved: copy `AGENTS.md` to `archive/AGENTS-<YYYY-MM-DD>.md`, add the rule to the right article, keep the file under 120 lines.
 
 ## Step 4 — Report
 

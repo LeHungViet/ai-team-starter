@@ -5,9 +5,9 @@ description: Create a new project in the working folder with a BRIEF.md; project
 
 # add-project — Create a project
 
-Result: `projects/<name>/BRIEF.md`, `projects/<name>/lessons.md` (the project's own lessons) and a new row in the **Projects** table of `AGENTS.md`.
+Result: `projects/<name>/BRIEF.md`, `projects/<name>/lessons.md` (the project's own lessons) and a new row in the **Projects** table of `START-HERE.md` (plus a new branch in its tree).
 
-No `AGENTS.md` yet → offer to run `setup` first.
+No `AGENTS.md` / `START-HERE.md` yet → offer to run `setup` first.
 
 ## Step 1 — Ask briefly (at most 3 questions, skip what you know)
 
@@ -22,7 +22,7 @@ No `AGENTS.md` yet → offer to run `setup` first.
 3. **Project with code or an app:** the SOURCE OF TRUTH block at the top is **mandatory**. Look first (read the folder, `git remote -v`, deploy config files) before asking. Anything you can't verify → write "not verified", don't guess, don't leave it blank. Record the verification date.
 4. **Documents-only project:** replace the SOURCE OF TRUTH block with one line: "No code — not applicable."
 5. Create `projects/<name>/lessons.md` from `templates/lessons.template.md`.
-6. Add a row to the **Projects** table in `AGENTS.md`: `| Name | projects/<name>/ | New |`. If the table has a "(none yet …)" row, replace it.
+6. `START-HERE.md`: add a row to the **Projects** table `| Name | projects/<name>/ | New | YYYY-MM-DD |` (replace a "(none yet …)" row) and add the `projects/<name>/` branch to the tree.
 
 ## Tell the user once
 

@@ -5,9 +5,9 @@ description: Tạo một dự án mới trong folder làm việc với tài li�
 
 # them-du-an — Tạo một dự án
 
-Kết quả: `du-an/<ten>/BRIEF.md`, `du-an/<ten>/bai-hoc.md` (bài học riêng của dự án) và một dòng mới trong bảng **Dự án** của `AGENTS.md`.
+Kết quả: `du-an/<ten>/BRIEF.md`, `du-an/<ten>/bai-hoc.md` (bài học riêng của dự án) và một dòng mới trong bảng **Dự án** của `START-HERE.md` (kèm nhánh mới trong cây thư mục ở đó).
 
-Chưa có `AGENTS.md` → mời chạy `bat-dau` trước.
+Chưa có `AGENTS.md` / `START-HERE.md` → mời chạy `bat-dau` trước.
 
 ## Bước 1 — Hỏi ngắn (tối đa 3 câu, bỏ câu đã biết)
 
@@ -22,7 +22,7 @@ Chưa có `AGENTS.md` → mời chạy `bat-dau` trước.
 3. **Dự án có code hoặc app:** khối NGUỒN SỰ THẬT ở đầu file là **bắt buộc**. Tự tìm trước (đọc thư mục, `git remote -v`, file cấu hình deploy) rồi mới hỏi. Dòng nào chưa xác minh được → ghi "chưa xác minh", không đoán, không bỏ trống. Ghi ngày xác minh.
 4. **Dự án chỉ là tài liệu:** thay khối NGUỒN SỰ THẬT bằng một dòng: "Không có code — không áp dụng."
 5. Tạo `du-an/<ten>/bai-hoc.md` từ `templates/bai-hoc.template.md`.
-6. Thêm một hàng vào bảng **Dự án** trong `AGENTS.md`: `| Tên | du-an/<ten>/ | Mới |`. Nếu bảng đang có dòng "(chưa có …)" thì thay dòng đó.
+6. `START-HERE.md`: thêm một hàng vào bảng **Dự án** `| Tên | du-an/<ten>/ | Mới | YYYY-MM-DD |` (thay dòng "(chưa có …)" nếu có) và thêm nhánh `du-an/<ten>/` vào cây thư mục.
 
 ## Luật cần nhắc người dùng (một lần)
 

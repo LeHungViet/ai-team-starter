@@ -19,6 +19,12 @@ Chưa có `bo-nho/` → báo "Folder chưa có bộ nhớ", gợi ý `bat-dau` h
 - Hai dòng ngược nhau → hỏi người dùng giữ bên nào (một câu, liệt kê cả hai).
 - Bài học thật ra chỉ thuộc một dự án → chuyển sang `du-an/<tên>/bai-hoc.md`.
 - Bài học không còn đúng (dự án đã đóng, công cụ đã bỏ) → chuyển xuống mục `## Hết hiệu lực` cuối file, không xoá.
+- Làm tương tự với `tro-ly/*/bai-hoc.md`.
+
+## Bước 2b — Chủ đề
+
+- `bo-nho/chu-de/`: gộp file trùng chủ đề (bản gốc vào `archive/`), sửa mục lục trong `BO-NHO.md`, đánh dấu phần đã lỗi thời.
+- Bài học thật ra là kiến thức (không phải luật) → chuyển sang file chủ đề phù hợp.
 
 ## Bước 3 — Nhật ký
 
@@ -30,10 +36,11 @@ Với mỗi tháng có nhật ký **cũ hơn 30 ngày**:
 ## Bước 4 — Mục lục và việc đang dở
 
 - `bo-nho/BO-NHO.md`: bỏ việc đang dở đã xong (đối chiếu nhật ký), sửa link hỏng, cập nhật dòng "Lần dọn gần nhất: YYYY-MM-DD".
+- `START-HERE.md`: cây thư mục khớp folder thật, danh bạ trợ lý và bảng dự án khớp thư mục thật.
 
 ## Bước 5 — Đề xuất nâng thành luật
 
-Bài học nào lặp lại nhiều lần **hoặc** đúng cho mọi việc → liệt kê tối đa 3 đề xuất: "Nâng thành luật trong AGENTS.md: <luật>". Chỉ ghi vào `AGENTS.md` khi người dùng duyệt từng dòng; trước khi ghi, chép `AGENTS.md` vào `archive/AGENTS-<YYYY-MM-DD>.md`, ghi vào điều phù hợp, giữ file dưới 200 dòng, rồi chuyển dòng bài học đó xuống "Hết hiệu lực" với ghi chú "đã nâng thành luật".
+Bài học nào lặp lại nhiều lần **hoặc** đúng cho mọi việc → liệt kê tối đa 3 đề xuất: "Nâng thành luật trong AGENTS.md: <luật>". Chỉ ghi vào `AGENTS.md` khi người dùng duyệt từng dòng; trước khi ghi, chép `AGENTS.md` vào `archive/AGENTS-<YYYY-MM-DD>.md`, ghi vào điều phù hợp, giữ file dưới 120 dòng, rồi chuyển dòng bài học đó xuống "Hết hiệu lực" với ghi chú "đã nâng thành luật".
 
 ## Bước 6 — Báo
 
