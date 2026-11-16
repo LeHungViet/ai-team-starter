@@ -1,6 +1,6 @@
 {
   "name": "ai-team",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "AI Team Starter — dựng đội AI riêng trong folder làm việc: file luật AGENTS.md/CLAUDE.md, trợ lý có tên, dự án có nguồn sự thật, bộ nhớ tự lưu bài học mỗi phiên. Cài xong, AI tự mời bạn setup.",
   "author": {
     "name": "Agent Pro",

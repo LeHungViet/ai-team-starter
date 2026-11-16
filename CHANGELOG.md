@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.2.2 — 2026-11-16
+- Sửa: mô tả skill `ghi-bai-hoc` / `add-lesson` có dấu `<…>` khiến claude.ai bỏ qua skill khi đồng bộ. Mô tả skill không được chứa `<` hoặc `>`.
+
 ## 0.2.1 — 2026-11-16
 - **Bản tiếng Anh `ai-team-en`** (English edition): cùng tính năng với bản tiếng Việt; skill `setup`, `add-assistant`, `add-project`, `organize-folder`, `save-session`, `add-lesson`, `tidy-memory`, `health-check`; thư mục `memory/`, `projects/`, `assistants/`, `docs/`. Cài **một trong hai** bản.
 - Bản tiếng Việt `ai-team`: `sap-xep-thu-muc` thêm `bo-nho/` vào cấu trúc chuẩn; tên hiển thị trên Codex thành "AI Team Starter (Tiếng Việt)".

@@ -1,6 +1,6 @@
 ---
 name: add-lesson
-description: Record a lesson right away (usually from a mistake, or when the user corrects the AI) into the folder's memory — memory/lessons.md if it holds for all work, projects/<name>/lessons.md if it belongs to one project — so every later session, on Claude and Codex, follows it. Does not write to AGENTS.md unless the user approves promoting it to a rule. Use when the user says "remember this lesson", "add a lesson", "don't do that again", "remember this rule", "ghi lại bài học".
+description: Record a lesson right away (usually from a mistake, or when the user corrects the AI) into the folder's memory — memory/lessons.md if it holds for all work, the project's lessons.md if it belongs to one project — so every later session, on Claude and Codex, follows it. Does not write to AGENTS.md unless the user approves promoting it to a rule. Use when the user says "remember this lesson", "add a lesson", "don't do that again", "remember this rule", "ghi lại bài học".
 ---
 
 # add-lesson — Record a lesson in memory

@@ -1,6 +1,6 @@
 {
   "name": "ai-team-en",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "AI Team Starter (English) — AGENTS.md constitution, named assistants, projects with a source of truth, and a memory folder that saves lessons every session.",
   "author": {
     "name": "Agent Pro",

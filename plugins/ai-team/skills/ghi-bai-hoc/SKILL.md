@@ -1,6 +1,6 @@
 ---
 name: ghi-bai-hoc
-description: Ghi ngay một bài học (thường rút ra từ một sai lầm hoặc khi người dùng sửa lưng AI) vào bộ nhớ của folder — bo-nho/bai-hoc.md nếu dùng chung, du-an/<tên>/bai-hoc.md nếu thuộc một dự án — để mọi phiên sau, trên Claude lẫn Codex, đều làm theo. Không ghi vào AGENTS.md trừ khi người dùng duyệt nâng thành luật. Dùng khi người dùng nói "ghi lại bài học", "nhớ luật này", "lần sau đừng làm vậy nữa", "remember this", "add a lesson".
+description: Ghi ngay một bài học (thường rút ra từ một sai lầm hoặc khi người dùng sửa lưng AI) vào bộ nhớ của folder — bo-nho/bai-hoc.md nếu dùng chung, bai-hoc.md của dự án nếu thuộc một dự án — để mọi phiên sau, trên Claude lẫn Codex, đều làm theo. Không ghi vào AGENTS.md trừ khi người dùng duyệt nâng thành luật. Dùng khi người dùng nói "ghi lại bài học", "nhớ luật này", "lần sau đừng làm vậy nữa", "remember this", "add a lesson".
 ---
 
 # ghi-bai-hoc — Ghi một bài học vào bộ nhớ

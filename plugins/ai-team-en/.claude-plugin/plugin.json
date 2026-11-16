@@ -1,6 +1,6 @@
 {
   "name": "ai-team-en",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "AI Team Starter (English) — set up your own AI team in a working folder: one AGENTS.md constitution shared by Claude and Codex, named assistants, projects with a source of truth, and a memory folder that saves lessons every session. Right after install, the agent offers setup.",
   "author": {
     "name": "Agent Pro",
