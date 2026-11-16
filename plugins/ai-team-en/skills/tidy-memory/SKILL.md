@@ -1,6 +1,6 @@
 ---
 name: tidy-memory
-description: Consolidate and clean up the folder's memory periodically — merge duplicate lessons, summarize old session logs by month, move originals to archive (never delete), fix the index, and propose which lessons should become rules in AGENTS.md. Use when the user says "tidy memory", "clean up memory", "consolidate memory", "monthly review", "dọn bộ nhớ", or when save-session suggests it because logs have piled up.
+description: Consolidate and clean up the folder's memory periodically — merge duplicate lessons, summarize old session logs by month, move originals to archive (never delete), fix the index, and propose which lessons should become rules in AGENTS.md. Use when the user says "tidy memory", "clean up memory", "consolidate memory", "monthly review", "dream", "memory dream", "dọn bộ nhớ", or when save-session suggests it because it has been a while.
 ---
 
 # tidy-memory — Consolidate and clean up memory

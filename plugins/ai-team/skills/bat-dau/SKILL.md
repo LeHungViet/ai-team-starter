@@ -1,6 +1,6 @@
 ---
 name: bat-dau
-description: Dựng bộ khung làm việc tối thiểu cho folder — AGENTS.md (hiến pháp), CLAUDE.md, START-HERE.md (bản đồ folder), hồ sơ người dùng nguoi-dung/ và bộ nhớ bo-nho/ — để AI hiểu người dùng là ai, folder có gì và làm việc theo cách nào. Dùng ngay sau khi cài AI Team Starter, khi folder chưa có AGENTS.md/CLAUDE.md, khi nâng cấp folder dựng bằng bản cũ, hoặc khi người dùng nói "bắt đầu", "setup", "dựng team AI", "tạo CLAUDE.md", "tạo AGENTS.md", "set up my AI team", "onboarding".
+description: Dựng bộ khung làm việc tối thiểu cho folder — AGENTS.md (hiến pháp), CLAUDE.md, START-HERE.md (bản đồ folder), hồ sơ người dùng nguoi-dung.md và bộ nhớ bo-nho/ — để AI hiểu người dùng là ai, folder có gì và làm việc theo cách nào. Dùng ngay sau khi cài AI Team Starter, khi folder chưa có AGENTS.md/CLAUDE.md, khi nâng cấp folder dựng bằng bản cũ, hoặc khi người dùng nói "bắt đầu", "setup", "dựng team AI", "tạo CLAUDE.md", "tạo AGENTS.md", "set up my AI team", "onboarding".
 ---
 
 # bat-dau — Dựng bộ khung tối thiểu
@@ -12,7 +12,7 @@ Kết quả sau khoảng 2 phút:
 | `AGENTS.md` | Hiến pháp — luật tổng quát, ngắn. Claude và Codex cùng đọc |
 | `CLAUDE.md` | Chỉ `@AGENTS.md` + `@START-HERE.md` + vài dòng riêng của Claude |
 | `START-HERE.md` | Bản đồ folder: cây thư mục, việc gì đọc file nào, danh bạ trợ lý, bảng dự án |
-| `nguoi-dung/ve-toi.md`, `nguoi-dung/van-phong.md` | Hồ sơ người dùng và giọng văn khi viết thay |
+| `nguoi-dung.md` | Hồ sơ người dùng và giọng văn khi viết thay |
 | `bo-nho/` | `BO-NHO.md`, `bai-hoc.md`, `chu-de/`, `nhat-ky/` |
 | `tro-ly/<tên>/` | Chỉ khi người dùng đặt tên trợ lý chính |
 
@@ -26,10 +26,12 @@ Kiểm tra folder đang mở có `AGENTS.md`, `CLAUDE.md`, `.claude/CLAUDE.md`, 
 - **Có file luật không do AI Team Starter tạo** → KHÔNG ghi đè. Tóm tắt 2–3 dòng file đang nói gì, rồi đề xuất: chỉ bổ sung phần còn thiếu (liệt kê cụ thể), hoặc viết lại theo mẫu. Chỉ sửa khi người dùng đồng ý; trước khi sửa, chép bản cũ vào `archive/<tên-file>-<YYYY-MM-DD>.md`.
 - **Folder dựng bằng AI Team Starter bản cũ** (AGENTS.md có dòng "bằng AI Team Starter") → đề xuất **nâng cấp**, liệt kê đúng những việc sẽ làm, chỉ làm khi người dùng đồng ý, chép bản cũ vào `archive/` trước:
   - chưa có `START-HERE.md` → tạo; chuyển bảng **Trợ lý**, **Dự án**, **Thư mục**, **Skill** từ AGENTS.md sang START-HERE.md;
-  - chưa có `nguoi-dung/` → tạo từ mục "Người bạn làm việc cùng"; AGENTS.md chỉ giữ 2 dòng tóm tắt;
+  - chưa có `nguoi-dung.md` → tạo từ mục "Người bạn làm việc cùng"; AGENTS.md chỉ giữ 2 dòng tóm tắt;
+  - có thư mục `nguoi-dung/` (`ve-toi.md`, `van-phong.md`, bản 0.3.0) → gộp thành `nguoi-dung.md` theo mẫu, giữ nguyên nội dung; thư mục cũ vào `archive/`;
   - AGENTS.md còn mục "Bài học" / "Ghi nhớ" → chuyển dòng bài học sang `bo-nho/bai-hoc.md`, thay bằng Điều 6 của mẫu;
   - trợ lý dạng file `tro-ly/<tên>.md` → chuyển thành thư mục `tro-ly/<tên>/VAI.md` theo format chuẩn (giữ nội dung cũ, bổ sung mục thiếu thành "chưa có") + `bai-hoc.md` + `ket-qua/`;
-  - thêm `bo-nho/chu-de/`; `CLAUDE.md` thêm `@START-HERE.md`.
+  - thêm `bo-nho/chu-de/`; `CLAUDE.md` thêm `@START-HERE.md`;
+  - AGENTS.md chưa có Điều 7 (máy, trình duyệt, việc chờ) → thêm Điều 7 của mẫu; `CLAUDE.md` thay dòng hẹn lịch cũ bằng dòng "Điều 7 trên Claude" của mẫu.
   Giữ nguyên mọi phần người dùng đã điền.
 - **Có `CLAUDE.md` mà không có `AGENTS.md`** và người dùng đồng ý → chuyển nội dung luật sang `AGENTS.md`, để `CLAUDE.md` theo mẫu.
 
@@ -47,7 +49,7 @@ Người dùng trả lời "tuỳ bạn" hoặc bỏ qua → chọn mặc địn
 
 ## Bước 3 — Viết các file
 
-1. Đọc mẫu trong `templates/` của skill này: `AGENTS.template.md`, `CLAUDE.template.md`, `START-HERE.template.md`, `nguoi-dung/*.template.md`, `bo-nho/*.template.md`.
+1. Đọc mẫu trong `templates/` của skill này: `AGENTS.template.md`, `CLAUDE.template.md`, `START-HERE.template.md`, `nguoi-dung.template.md`, `bo-nho/*.template.md`.
 2. Điền chỗ giữ chỗ:
 
    | Chỗ giữ chỗ | Điền gì |
@@ -66,7 +68,7 @@ Người dùng trả lời "tuỳ bạn" hoặc bỏ qua → chọn mặc địn
    Viết bằng ngôn ngữ người dùng chọn (English thì dịch cả phần luật). Không để sót `{{…}}` hay chữ kiểu `[TÊN]`.
 3. `AGENTS.md` **dưới 120 dòng**, chỉ luật tổng quát; luật viết cụ thể, kiểm được. Không đưa bảng, danh bạ, hồ sơ vào đây.
 4. Ghi `AGENTS.md`, `CLAUDE.md`, `START-HERE.md` vào gốc folder. Hai dòng đầu của `CLAUDE.md` là `@AGENTS.md` và `@START-HERE.md`.
-5. Tạo (chưa có mới tạo, có rồi giữ nguyên): `nguoi-dung/ve-toi.md`, `nguoi-dung/van-phong.md`, `bo-nho/BO-NHO.md`, `bo-nho/bai-hoc.md`, thư mục `bo-nho/chu-de/` và `bo-nho/nhat-ky/` (mỗi thư mục rỗng đặt một file `.gitkeep`).
+5. Tạo (chưa có mới tạo, có rồi giữ nguyên): `nguoi-dung.md`, `bo-nho/BO-NHO.md`, `bo-nho/bai-hoc.md`, thư mục `bo-nho/chu-de/` và `bo-nho/nhat-ky/` (mỗi thư mục rỗng đặt một file `.gitkeep`).
 6. Có trợ lý chính → tạo `tro-ly/<thư-mục>/` theo đúng cách của skill `them-tro-ly` (mẫu `../them-tro-ly/templates/`): `VAI.md` đủ 9 mục với vai "Trợ lý chính — làm mọi việc, điều phối trợ lý khác", `bai-hoc.md`, `ket-qua/`.
 7. Cây thư mục trong `START-HERE.md` phải khớp folder thật: chưa có trợ lý thì nhánh trợ lý ghi `tro-ly/  ← (chưa có — dùng them-tro-ly)`; chưa có dự án thì `du-an/  ← (chưa có — dùng them-du-an)`; có trợ lý chính thì ghi đúng tên thư mục của nó.
 

@@ -12,7 +12,7 @@ description: Dựng cấu trúc thư mục gọn cho folder làm việc, hoặc 
 ├── AGENTS.md        ← hiến pháp (luật tổng quát)
 ├── CLAUDE.md        ← @AGENTS.md + @START-HERE.md
 ├── START-HERE.md    ← bản đồ folder: cây, việc gì đọc gì, danh bạ trợ lý, dự án
-├── nguoi-dung/      ← ve-toi.md, van-phong.md
+├── nguoi-dung.md    ← hồ sơ người dùng + giọng văn
 ├── bo-nho/          ← BO-NHO.md, bai-hoc.md, chu-de/, nhat-ky/
 ├── tro-ly/<tên>/    ← VAI.md, bai-hoc.md, ket-qua/
 ├── du-an/<tên>/     ← BRIEF.md, bai-hoc.md + mọi file của dự án

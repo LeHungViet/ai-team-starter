@@ -1,0 +1,252 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1890" height="1265" viewBox="0 0 1890 1265">
+<rect width="1890" height="1265" fill="#F8F9FB"/>
+<text x="48" y="66" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="#1F2430" text-anchor="start">AI Team Starter — working folder structure</text>
+<text x="48" y="100" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="400" fill="#5C6370" text-anchor="start">One folder = one AI team. Rules rarely change, the map shows the way, memory grows after every session. Works with Claude and Codex.</text>
+<rect x="48" y="122" width="14" height="14" rx="3" fill="#3B5BDB"/>
+<text x="70" y="134" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#5C6370" text-anchor="start">Rules</text>
+<rect x="128.0" y="122" width="14" height="14" rx="3" fill="#0CA678"/>
+<text x="150.0" y="134" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#5C6370" text-anchor="start">Map</text>
+<rect x="192.0" y="122" width="14" height="14" rx="3" fill="#E8590C"/>
+<text x="214.0" y="134" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#5C6370" text-anchor="start">User</text>
+<rect x="264.0" y="122" width="14" height="14" rx="3" fill="#9C36B5"/>
+<text x="286.0" y="134" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#5C6370" text-anchor="start">Memory</text>
+<rect x="352.0" y="122" width="14" height="14" rx="3" fill="#D6336C"/>
+<text x="374.0" y="134" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#5C6370" text-anchor="start">Assistants</text>
+<rect x="472.0" y="122" width="14" height="14" rx="3" fill="#1098AD"/>
+<text x="494.0" y="134" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#5C6370" text-anchor="start">Projects</text>
+<rect x="576.0" y="122" width="14" height="14" rx="3" fill="#868E96"/>
+<text x="598.0" y="134" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="500" fill="#5C6370" text-anchor="start">Storage</text>
+<rect x="40" y="160" width="1080" height="980" rx="16" fill="#FFFFFF" stroke="#DEE2E6"/>
+<text x="68" y="202" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#1F2430" text-anchor="start">Folder tree</text>
+<text x="68" y="242" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="17" font-weight="700" fill="#1F2430" text-anchor="start">your-folder/</text>
+<text x="800" y="202" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#5C6370" text-anchor="start">skill that creates / updates</text>
+<path d="M78 273 H96" stroke="#ADB5BD" stroke-width="1.5" fill="none"/>
+<rect x="104" y="264" width="6" height="18" rx="2" fill="#3B5BDB"/>
+<text x="118" y="278" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="16" font-weight="600" fill="#1F2430" text-anchor="start">AGENTS.md</text>
+<text x="370" y="278" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#5C6370" text-anchor="start">constitution: short, general rules, rarely edited</text>
+<rect x="800" y="263" width="51.0" height="21" rx="5" fill="#EDF2FF" stroke="#BAC8FF"/>
+<text x="807" y="278" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="600" fill="#3B5BDB" text-anchor="start">setup</text>
+<path d="M78 309 H96" stroke="#ADB5BD" stroke-width="1.5" fill="none"/>
+<rect x="104" y="300" width="6" height="18" rx="2" fill="#3B5BDB"/>
+<text x="118" y="314" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="16" font-weight="600" fill="#1F2430" text-anchor="start">CLAUDE.md</text>
+<text x="370" y="314" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#5C6370" text-anchor="start">loads AGENTS.md + START-HERE.md</text>
+<rect x="800" y="299" width="51.0" height="21" rx="5" fill="#EDF2FF" stroke="#BAC8FF"/>
+<text x="807" y="314" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="600" fill="#3B5BDB" text-anchor="start">setup</text>
+<path d="M78 345 H96" stroke="#ADB5BD" stroke-width="1.5" fill="none"/>
+<rect x="104" y="336" width="6" height="18" rx="2" fill="#0CA678"/>
+<text x="118" y="350" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="16" font-weight="600" fill="#1F2430" text-anchor="start">START-HERE.md</text>
+<text x="370" y="350" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#5C6370" text-anchor="start">map: folder tree · task → file · assistants · projects</text>
+<rect x="800" y="335" width="51.0" height="21" rx="5" fill="#EDF2FF" stroke="#BAC8FF"/>
+<text x="807" y="350" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="600" fill="#3B5BDB" text-anchor="start">setup</text>
+<rect x="856.0" y="335" width="110.2" height="21" rx="5" fill="#EDF2FF" stroke="#BAC8FF"/>
+<text x="863.0" y="350" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="600" fill="#3B5BDB" text-anchor="start">add-assistant</text>
+<rect x="971.2" y="335" width="95.4" height="21" rx="5" fill="#EDF2FF" stroke="#BAC8FF"/>
+<text x="978.2" y="350" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="600" fill="#3B5BDB" text-anchor="start">add-project</text>
+<path d="M78 381 H96" stroke="#ADB5BD" stroke-width="1.5" fill="none"/>
+<rect x="104" y="372" width="6" height="18" rx="2" fill="#E8590C"/>
+<text x="118" y="386" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="16" font-weight="600" fill="#1F2430" text-anchor="start">about-me.md</text>
+<text x="370" y="386" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#5C6370" text-anchor="start">user profile + voice when writing for them</text>
+<rect x="800" y="371" width="51.0" height="21" rx="5" fill="#EDF2FF" stroke="#BAC8FF"/>
+<text x="807" y="386" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="600" fill="#3B5BDB" text-anchor="start">setup</text>
+<rect x="856.0" y="371" width="102.80000000000001" height="21" rx="5" fill="#EDF2FF" stroke="#BAC8FF"/>
+<text x="863.0" y="386" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="600" fill="#3B5BDB" text-anchor="start">save-session</text>
+<path d="M78 417 H96" stroke="#ADB5BD" stroke-width="1.5" fill="none"/>
+<rect x="104" y="408" width="6" height="18" rx="2" fill="#9C36B5"/>
+<text x="118" y="422" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="16" font-weight="600" fill="#1F2430" text-anchor="start">memory/</text>
+<text x="370" y="422" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#5C6370" text-anchor="start">shared memory</text>
+<rect x="800" y="407" width="51.0" height="21" rx="5" fill="#EDF2FF" stroke="#BAC8FF"/>
+<text x="807" y="422" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="600" fill="#3B5BDB" text-anchor="start">setup</text>
+<path d="M116 453 H140" stroke="#CED4DA" stroke-width="1.5" fill="none"/>
+<rect x="148" y="444" width="6" height="18" rx="2" fill="#9C36B5"/>
+<text x="162" y="458" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="16" font-weight="500" fill="#1F2430" text-anchor="start">MEMORY.md</text>
+<text x="370" y="458" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#5C6370" text-anchor="start">index + open items</text>
+<rect x="800" y="443" width="102.80000000000001" height="21" rx="5" fill="#EDF2FF" stroke="#BAC8FF"/>
+<text x="807" y="458" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="600" fill="#3B5BDB" text-anchor="start">save-session</text>
+<rect x="907.8" y="443" width="95.4" height="21" rx="5" fill="#EDF2FF" stroke="#BAC8FF"/>
+<text x="914.8" y="458" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="600" fill="#3B5BDB" text-anchor="start">tidy-memory</text>
+<path d="M116 489 H140" stroke="#CED4DA" stroke-width="1.5" fill="none"/>
+<rect x="148" y="480" width="6" height="18" rx="2" fill="#9C36B5"/>
+<text x="162" y="494" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="16" font-weight="500" fill="#1F2430" text-anchor="start">lessons.md</text>
+<text x="370" y="494" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#5C6370" text-anchor="start">lessons for all work</text>
+<rect x="800" y="479" width="88.0" height="21" rx="5" fill="#EDF2FF" stroke="#BAC8FF"/>
+<text x="807" y="494" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="600" fill="#3B5BDB" text-anchor="start">add-lesson</text>
+<rect x="893.0" y="479" width="102.80000000000001" height="21" rx="5" fill="#EDF2FF" stroke="#BAC8FF"/>
+<text x="900.0" y="494" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="600" fill="#3B5BDB" text-anchor="start">save-session</text>
+<rect x="1000.8" y="479" width="95.4" height="21" rx="5" fill="#EDF2FF" stroke="#BAC8FF"/>
+<text x="1007.8" y="494" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="600" fill="#3B5BDB" text-anchor="start">tidy-memory</text>
+<path d="M116 525 H140" stroke="#CED4DA" stroke-width="1.5" fill="none"/>
+<rect x="148" y="516" width="6" height="18" rx="2" fill="#9C36B5"/>
+<text x="162" y="530" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="16" font-weight="500" fill="#1F2430" text-anchor="start">topics/</text>
+<text x="370" y="530" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#5C6370" text-anchor="start">reusable knowledge, one file per topic</text>
+<rect x="800" y="515" width="102.80000000000001" height="21" rx="5" fill="#EDF2FF" stroke="#BAC8FF"/>
+<text x="807" y="530" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="600" fill="#3B5BDB" text-anchor="start">save-session</text>
+<path d="M116 561 H140" stroke="#CED4DA" stroke-width="1.5" fill="none"/>
+<rect x="148" y="552" width="6" height="18" rx="2" fill="#9C36B5"/>
+<text x="162" y="566" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="16" font-weight="500" fill="#1F2430" text-anchor="start">sessions/</text>
+<text x="370" y="566" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#5C6370" text-anchor="start">one log per session, by month</text>
+<rect x="800" y="551" width="102.80000000000001" height="21" rx="5" fill="#EDF2FF" stroke="#BAC8FF"/>
+<text x="807" y="566" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="600" fill="#3B5BDB" text-anchor="start">save-session</text>
+<rect x="907.8" y="551" width="95.4" height="21" rx="5" fill="#EDF2FF" stroke="#BAC8FF"/>
+<text x="914.8" y="566" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="600" fill="#3B5BDB" text-anchor="start">tidy-memory</text>
+<path d="M78 597 H96" stroke="#ADB5BD" stroke-width="1.5" fill="none"/>
+<rect x="104" y="588" width="6" height="18" rx="2" fill="#D6336C"/>
+<text x="118" y="602" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="16" font-weight="600" fill="#1F2430" text-anchor="start">assistants/&lt;name&gt;/</text>
+<text x="370" y="602" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#5C6370" text-anchor="start">one folder per assistant</text>
+<rect x="800" y="587" width="110.2" height="21" rx="5" fill="#EDF2FF" stroke="#BAC8FF"/>
+<text x="807" y="602" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="600" fill="#3B5BDB" text-anchor="start">add-assistant</text>
+<path d="M116 633 H140" stroke="#CED4DA" stroke-width="1.5" fill="none"/>
+<rect x="148" y="624" width="6" height="18" rx="2" fill="#D6336C"/>
+<text x="162" y="638" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="16" font-weight="500" fill="#1F2430" text-anchor="start">ROLE.md</text>
+<text x="370" y="638" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#5C6370" text-anchor="start">role definition, 9-section format</text>
+<rect x="800" y="623" width="110.2" height="21" rx="5" fill="#EDF2FF" stroke="#BAC8FF"/>
+<text x="807" y="638" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="600" fill="#3B5BDB" text-anchor="start">add-assistant</text>
+<path d="M116 669 H140" stroke="#CED4DA" stroke-width="1.5" fill="none"/>
+<rect x="148" y="660" width="6" height="18" rx="2" fill="#D6336C"/>
+<text x="162" y="674" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="16" font-weight="500" fill="#1F2430" text-anchor="start">lessons.md</text>
+<text x="370" y="674" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#5C6370" text-anchor="start">the assistant's own lessons</text>
+<rect x="800" y="659" width="88.0" height="21" rx="5" fill="#EDF2FF" stroke="#BAC8FF"/>
+<text x="807" y="674" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="600" fill="#3B5BDB" text-anchor="start">add-lesson</text>
+<rect x="893.0" y="659" width="102.80000000000001" height="21" rx="5" fill="#EDF2FF" stroke="#BAC8FF"/>
+<text x="900.0" y="674" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="600" fill="#3B5BDB" text-anchor="start">save-session</text>
+<path d="M116 705 H140" stroke="#CED4DA" stroke-width="1.5" fill="none"/>
+<rect x="148" y="696" width="6" height="18" rx="2" fill="#D6336C"/>
+<text x="162" y="710" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="16" font-weight="500" fill="#1F2430" text-anchor="start">outputs/</text>
+<text x="370" y="710" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#5C6370" text-anchor="start">what the assistant produces</text>
+<path d="M78 741 H96" stroke="#ADB5BD" stroke-width="1.5" fill="none"/>
+<rect x="104" y="732" width="6" height="18" rx="2" fill="#1098AD"/>
+<text x="118" y="746" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="16" font-weight="600" fill="#1F2430" text-anchor="start">projects/&lt;name&gt;/</text>
+<text x="370" y="746" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#5C6370" text-anchor="start">one folder per project</text>
+<rect x="800" y="731" width="95.4" height="21" rx="5" fill="#EDF2FF" stroke="#BAC8FF"/>
+<text x="807" y="746" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="600" fill="#3B5BDB" text-anchor="start">add-project</text>
+<path d="M116 777 H140" stroke="#CED4DA" stroke-width="1.5" fill="none"/>
+<rect x="148" y="768" width="6" height="18" rx="2" fill="#1098AD"/>
+<text x="162" y="782" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="16" font-weight="500" fill="#1F2430" text-anchor="start">BRIEF.md</text>
+<text x="370" y="782" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#5C6370" text-anchor="start">goal, status, SOURCE OF TRUTH</text>
+<rect x="800" y="767" width="95.4" height="21" rx="5" fill="#EDF2FF" stroke="#BAC8FF"/>
+<text x="807" y="782" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="600" fill="#3B5BDB" text-anchor="start">add-project</text>
+<rect x="900.4" y="767" width="102.80000000000001" height="21" rx="5" fill="#EDF2FF" stroke="#BAC8FF"/>
+<text x="907.4" y="782" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="600" fill="#3B5BDB" text-anchor="start">save-session</text>
+<path d="M116 813 H140" stroke="#CED4DA" stroke-width="1.5" fill="none"/>
+<rect x="148" y="804" width="6" height="18" rx="2" fill="#1098AD"/>
+<text x="162" y="818" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="16" font-weight="500" fill="#1F2430" text-anchor="start">lessons.md</text>
+<text x="370" y="818" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#5C6370" text-anchor="start">project lessons</text>
+<rect x="800" y="803" width="88.0" height="21" rx="5" fill="#EDF2FF" stroke="#BAC8FF"/>
+<text x="807" y="818" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="600" fill="#3B5BDB" text-anchor="start">add-lesson</text>
+<rect x="893.0" y="803" width="102.80000000000001" height="21" rx="5" fill="#EDF2FF" stroke="#BAC8FF"/>
+<text x="900.0" y="818" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="600" fill="#3B5BDB" text-anchor="start">save-session</text>
+<path d="M116 849 H140" stroke="#CED4DA" stroke-width="1.5" fill="none"/>
+<rect x="148" y="840" width="6" height="18" rx="2" fill="#1098AD"/>
+<text x="162" y="854" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="16" font-weight="500" fill="#1F2430" text-anchor="start">…</text>
+<text x="370" y="854" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#5C6370" text-anchor="start">all project files</text>
+<path d="M78 885 H96" stroke="#ADB5BD" stroke-width="1.5" fill="none"/>
+<rect x="104" y="876" width="6" height="18" rx="2" fill="#868E96"/>
+<text x="118" y="890" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="16" font-weight="600" fill="#1F2430" text-anchor="start">docs/</text>
+<text x="370" y="890" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#5C6370" text-anchor="start">shared documents</text>
+<rect x="800" y="875" width="125.0" height="21" rx="5" fill="#EDF2FF" stroke="#BAC8FF"/>
+<text x="807" y="890" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="600" fill="#3B5BDB" text-anchor="start">organize-folder</text>
+<path d="M78 921 H96" stroke="#ADB5BD" stroke-width="1.5" fill="none"/>
+<rect x="104" y="912" width="6" height="18" rx="2" fill="#868E96"/>
+<text x="118" y="926" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="16" font-weight="600" fill="#1F2430" text-anchor="start">archive/</text>
+<text x="370" y="926" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#5C6370" text-anchor="start">cleaned-up items, old versions — nothing deleted</text>
+<rect x="800" y="911" width="125.0" height="21" rx="5" fill="#EDF2FF" stroke="#BAC8FF"/>
+<text x="807" y="926" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="600" fill="#3B5BDB" text-anchor="start">organize-folder</text>
+<rect x="930.0" y="911" width="95.4" height="21" rx="5" fill="#EDF2FF" stroke="#BAC8FF"/>
+<text x="937.0" y="926" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="12" font-weight="600" fill="#3B5BDB" text-anchor="start">tidy-memory</text>
+<path d="M78 252 V921" stroke="#ADB5BD" stroke-width="1.5" fill="none"/>
+<path d="M116 428 V561" stroke="#CED4DA" stroke-width="1.5" fill="none"/>
+<path d="M116 608 V705" stroke="#CED4DA" stroke-width="1.5" fill="none"/>
+<path d="M116 752 V849" stroke="#CED4DA" stroke-width="1.5" fill="none"/>
+<rect x="64" y="960" width="1032" height="158" rx="12" fill="#FFF0F6" stroke="#FCC2D7"/>
+<text x="84" y="990" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="16" font-weight="700" fill="#D6336C" text-anchor="start">ROLE.md — 9 sections</text>
+<rect x="84" y="1008" width="96.4" height="26" rx="13" fill="#FFFFFF" stroke="#F783AC"/>
+<text x="94" y="1026" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#D6336C" text-anchor="start">1</text>
+<text x="108" y="1026" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#1F2430" text-anchor="start">Identity</text>
+<rect x="188.4" y="1008" width="104.7" height="26" rx="13" fill="#FFFFFF" stroke="#F783AC"/>
+<text x="198.4" y="1026" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#D6336C" text-anchor="start">2</text>
+<text x="212.4" y="1026" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#1F2430" text-anchor="start">Call when</text>
+<rect x="301.1" y="1008" width="121.30000000000001" height="26" rx="13" fill="#FFFFFF" stroke="#F783AC"/>
+<text x="311.1" y="1026" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#D6336C" text-anchor="start">3</text>
+<text x="325.1" y="1026" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#1F2430" text-anchor="start">Personality</text>
+<rect x="430.40000000000003" y="1008" width="104.7" height="26" rx="13" fill="#FFFFFF" stroke="#F783AC"/>
+<text x="440.40000000000003" y="1026" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#D6336C" text-anchor="start">4</text>
+<text x="454.40000000000003" y="1026" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#1F2430" text-anchor="start">Expertise</text>
+<rect x="543.1" y="1008" width="121.30000000000001" height="26" rx="13" fill="#FFFFFF" stroke="#F783AC"/>
+<text x="553.1" y="1026" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#D6336C" text-anchor="start">5</text>
+<text x="567.1" y="1026" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#1F2430" text-anchor="start">How to work</text>
+<rect x="672.4000000000001" y="1008" width="137.9" height="26" rx="13" fill="#FFFFFF" stroke="#F783AC"/>
+<text x="682.4000000000001" y="1026" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#D6336C" text-anchor="start">6</text>
+<text x="696.4000000000001" y="1026" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#1F2430" text-anchor="start">Communication</text>
+<rect x="818.3000000000001" y="1008" width="121.30000000000001" height="26" rx="13" fill="#FFFFFF" stroke="#F783AC"/>
+<text x="828.3000000000001" y="1026" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#D6336C" text-anchor="start">7</text>
+<text x="842.3000000000001" y="1026" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#1F2430" text-anchor="start">Does not do</text>
+<rect x="84" y="1044" width="146.20000000000002" height="26" rx="13" fill="#FFFFFF" stroke="#F783AC"/>
+<text x="94" y="1062" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#D6336C" text-anchor="start">8</text>
+<text x="108" y="1062" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#1F2430" text-anchor="start">Own principles</text>
+<rect x="238.20000000000002" y="1044" width="162.8" height="26" rx="13" fill="#FFFFFF" stroke="#F783AC"/>
+<text x="248.20000000000002" y="1062" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#D6336C" text-anchor="start">9</text>
+<text x="262.20000000000005" y="1062" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="500" fill="#1F2430" text-anchor="start">Where results go</text>
+<text x="1150" y="202" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#1F2430" text-anchor="start">How a working session runs</text>
+<rect x="1150" y="222" width="700" height="104" rx="14" fill="#FFFFFF" stroke="#DEE2E6"/>
+<rect x="1150" y="222" width="6" height="104" rx="3" fill="#3B5BDB"/>
+<circle cx="1188" cy="254" r="16" fill="#3B5BDB"/>
+<text x="1188" y="260" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+<text x="1216" y="260" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#1F2430" text-anchor="start">Session starts</text>
+<text x="1216" y="288" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#5C6370" text-anchor="start">CLAUDE.md loads AGENTS.md (rules) and START-HERE.md (map).</text>
+<text x="1216" y="310" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#5C6370" text-anchor="start">Start hook: an earlier session was not saved → reminds to catch up.</text>
+<path d="M1188 330 V403.5" stroke="#ADB5BD" stroke-width="2" fill="none"/>
+<path d="M1182 401.5 L1188 409.5 L1194 401.5" stroke="#ADB5BD" stroke-width="2" fill="none"/>
+<rect x="1150" y="413.5" width="700" height="104" rx="14" fill="#FFFFFF" stroke="#DEE2E6"/>
+<rect x="1150" y="413.5" width="6" height="104" rx="3" fill="#0CA678"/>
+<circle cx="1188" cy="445.5" r="16" fill="#0CA678"/>
+<text x="1188" y="451.5" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+<text x="1216" y="451.5" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#1F2430" text-anchor="start">Check the map</text>
+<text x="1216" y="479.5" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#5C6370" text-anchor="start">Assistant called by name → assistants/&lt;name&gt;/ROLE.md + lessons.md.</text>
+<text x="1216" y="501.5" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#5C6370" text-anchor="start">Project work → projects/&lt;name&gt;/BRIEF.md. Knowing the user → about-me.md.</text>
+<path d="M1188 521.5 V595.0" stroke="#ADB5BD" stroke-width="2" fill="none"/>
+<path d="M1182 593.0 L1188 601.0 L1194 593.0" stroke="#ADB5BD" stroke-width="2" fill="none"/>
+<rect x="1150" y="605.0" width="700" height="104" rx="14" fill="#FFFFFF" stroke="#DEE2E6"/>
+<rect x="1150" y="605.0" width="6" height="104" rx="3" fill="#D6336C"/>
+<circle cx="1188" cy="637.0" r="16" fill="#D6336C"/>
+<text x="1188" y="643.0" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+<text x="1216" y="643.0" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#1F2430" text-anchor="start">Work</text>
+<text x="1216" y="671.0" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#5C6370" text-anchor="start">Results go to the right branch: outputs/, the project folder, docs/.</text>
+<text x="1216" y="693.0" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#5C6370" text-anchor="start">Corrected or got it wrong → add-lesson records it right away.</text>
+<path d="M1188 713.0 V786.5" stroke="#ADB5BD" stroke-width="2" fill="none"/>
+<path d="M1182 784.5 L1188 792.5 L1194 784.5" stroke="#ADB5BD" stroke-width="2" fill="none"/>
+<rect x="1150" y="796.5" width="700" height="128" rx="14" fill="#FFFFFF" stroke="#DEE2E6"/>
+<rect x="1150" y="796.5" width="6" height="128" rx="3" fill="#9C36B5"/>
+<circle cx="1188" cy="828.5" r="16" fill="#9C36B5"/>
+<text x="1188" y="834.5" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
+<text x="1216" y="834.5" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#1F2430" text-anchor="start">Session ends — save-session</text>
+<text x="1216" y="862.5" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#5C6370" text-anchor="start">Log → sessions/ · lessons → lessons.md (shared / project / assistant)</text>
+<text x="1216" y="884.5" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#5C6370" text-anchor="start">Knowledge → topics/ · new facts about the user → about-me.md</text>
+<text x="1216" y="906.5" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#5C6370" text-anchor="start">Project status → START-HERE.md</text>
+<path d="M1188 928.5 V1002.0" stroke="#ADB5BD" stroke-width="2" fill="none"/>
+<path d="M1182 1000.0 L1188 1008.0 L1194 1000.0" stroke="#ADB5BD" stroke-width="2" fill="none"/>
+<rect x="1150" y="1012.0" width="700" height="128" rx="14" fill="#FFFFFF" stroke="#DEE2E6"/>
+<rect x="1150" y="1012.0" width="6" height="128" rx="3" fill="#868E96"/>
+<circle cx="1188" cy="1044.0" r="16" fill="#868E96"/>
+<text x="1188" y="1050.0" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">5</text>
+<text x="1216" y="1050.0" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#1F2430" text-anchor="start">Periodically</text>
+<text x="1216" y="1078.0" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#5C6370" text-anchor="start">tidy-memory: merges duplicates, summarizes old logs into archive/, proposes</text>
+<text x="1216" y="1100.0" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#5C6370" text-anchor="start">promoting lessons into AGENTS.md rules — only if the user approves.</text>
+<text x="1216" y="1122.0" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#5C6370" text-anchor="start">health-check: 12 checks, read-only, reports what drifted.</text>
+<text x="44" y="1186" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#1F2430" text-anchor="start">8 skills</text>
+<rect x="142" y="1166" width="72.0" height="30" rx="8" fill="#EDF2FF" stroke="#BAC8FF"/>
+<text x="154" y="1186" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="14.5" font-weight="600" fill="#3B5BDB" text-anchor="start">setup</text>
+<rect x="224.0" y="1166" width="148.8" height="30" rx="8" fill="#EDF2FF" stroke="#BAC8FF"/>
+<text x="236.0" y="1186" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="14.5" font-weight="600" fill="#3B5BDB" text-anchor="start">add-assistant</text>
+<rect x="382.8" y="1166" width="129.6" height="30" rx="8" fill="#EDF2FF" stroke="#BAC8FF"/>
+<text x="394.8" y="1186" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="14.5" font-weight="600" fill="#3B5BDB" text-anchor="start">add-project</text>
+<rect x="522.4" y="1166" width="168.0" height="30" rx="8" fill="#EDF2FF" stroke="#BAC8FF"/>
+<text x="534.4" y="1186" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="14.5" font-weight="600" fill="#3B5BDB" text-anchor="start">organize-folder</text>
+<rect x="700.4" y="1166" width="139.2" height="30" rx="8" fill="#EDF2FF" stroke="#BAC8FF"/>
+<text x="712.4" y="1186" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="14.5" font-weight="600" fill="#3B5BDB" text-anchor="start">save-session</text>
+<rect x="849.5999999999999" y="1166" width="120.0" height="30" rx="8" fill="#EDF2FF" stroke="#BAC8FF"/>
+<text x="861.5999999999999" y="1186" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="14.5" font-weight="600" fill="#3B5BDB" text-anchor="start">add-lesson</text>
+<rect x="979.5999999999999" y="1166" width="129.6" height="30" rx="8" fill="#EDF2FF" stroke="#BAC8FF"/>
+<text x="991.5999999999999" y="1186" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="14.5" font-weight="600" fill="#3B5BDB" text-anchor="start">tidy-memory</text>
+<rect x="1119.1999999999998" y="1166" width="139.2" height="30" rx="8" fill="#EDF2FF" stroke="#BAC8FF"/>
+<text x="1131.1999999999998" y="1186" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="14.5" font-weight="600" fill="#3B5BDB" text-anchor="start">health-check</text>
+<text x="44" y="1230" font-family="Inter, 'Be Vietnam Pro', 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#5C6370" text-anchor="start">The root holds only 4 files (rules, map, profile) and these folders. Cleaning up = moving to archive/, never deleting.</text>
+</svg>

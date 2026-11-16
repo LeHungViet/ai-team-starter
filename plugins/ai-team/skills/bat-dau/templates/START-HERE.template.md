@@ -14,9 +14,7 @@
 ├── AGENTS.md            ← hiến pháp: luật tổng quát (Claude + Codex)
 ├── CLAUDE.md            ← @AGENTS.md + @START-HERE.md
 ├── START-HERE.md        ← bản đồ này
-├── nguoi-dung/          ← hồ sơ người dùng
-│   ├── ve-toi.md        ← là ai, công việc, cách nghĩ, mục tiêu
-│   └── van-phong.md     ← giọng văn khi AI viết thay
+├── nguoi-dung.md        ← hồ sơ người dùng + giọng văn khi AI viết thay
 ├── bo-nho/              ← bộ nhớ chung
 │   ├── BO-NHO.md        ← mục lục + việc đang dở
 │   ├── bai-hoc.md       ← bài học dùng cho mọi việc
@@ -34,7 +32,7 @@
 └── archive/             ← đồ đã dọn, bản cũ; không xoá gì
 ```
 
-Gốc folder chỉ giữ 3 file trên và các thư mục này. File mới → đặt vào đúng nhánh; không chắc → chọn nhánh hợp nhất, ghi "⚠️ Giả định" và báo người dùng (Điều 2.2).
+Gốc folder chỉ giữ 4 file trên và các thư mục này. File mới → đặt vào đúng nhánh; không chắc → chọn nhánh hợp nhất, ghi "⚠️ Giả định" và báo người dùng (Điều 2.2).
 
 ## 3. Việc gì → đọc file nào
 
@@ -43,8 +41,8 @@ Gốc folder chỉ giữ 3 file trên và các thư mục này. File mới → �
 | Mọi phiên | `AGENTS.md` → file này → `bo-nho/BO-NHO.md` → `bo-nho/bai-hoc.md` |
 | Làm với dự án X | `du-an/x/BRIEF.md` → `du-an/x/bai-hoc.md` |
 | Người dùng gọi tên trợ lý | `tro-ly/<tên>/VAI.md` → `tro-ly/<tên>/bai-hoc.md` |
-| Viết thay người dùng | `nguoi-dung/van-phong.md` |
-| Cần hiểu người dùng sâu hơn | `nguoi-dung/ve-toi.md` |
+| Viết thay người dùng | `nguoi-dung.md` → mục "Giọng văn khi viết thay" |
+| Cần hiểu người dùng sâu hơn | `nguoi-dung.md` |
 | Cần cách làm đã có (quy trình, thuật ngữ) | `bo-nho/chu-de/` |
 | Tra lại việc cũ | `bo-nho/nhat-ky/` |
 

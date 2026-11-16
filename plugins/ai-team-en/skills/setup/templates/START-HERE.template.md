@@ -14,9 +14,7 @@
 ├── AGENTS.md            ← constitution: general rules (Claude + Codex)
 ├── CLAUDE.md            ← @AGENTS.md + @START-HERE.md
 ├── START-HERE.md        ← this map
-├── about-me/            ← user profile
-│   ├── profile.md       ← who they are, work, how they think, goals
-│   └── voice.md         ← voice when the AI writes on their behalf
+├── about-me.md          ← user profile + voice when the AI writes on their behalf
 ├── memory/              ← shared memory
 │   ├── MEMORY.md        ← index + open items
 │   ├── lessons.md       ← lessons for all work
@@ -34,7 +32,7 @@
 └── archive/             ← cleaned-up items, old versions; nothing is deleted
 ```
 
-The root holds only the 3 files above and these folders. New file → put it in the right branch; unsure → pick the best-fitting branch, mark "⚠️ Assumption" and tell the user (Article 2.2).
+The root holds only the 4 files above and these folders. New file → put it in the right branch; unsure → pick the best-fitting branch, mark "⚠️ Assumption" and tell the user (Article 2.2).
 
 ## 3. Task → read
 
@@ -43,8 +41,8 @@ The root holds only the 3 files above and these folders. New file → put it in 
 | Every session | `AGENTS.md` → this file → `memory/MEMORY.md` → `memory/lessons.md` |
 | Working on project X | `projects/x/BRIEF.md` → `projects/x/lessons.md` |
 | User calls an assistant by name | `assistants/<name>/ROLE.md` → `assistants/<name>/lessons.md` |
-| Writing on the user's behalf | `about-me/voice.md` |
-| Need to understand the user better | `about-me/profile.md` |
+| Writing on the user's behalf | `about-me.md` → "Voice when writing on their behalf" |
+| Need to understand the user better | `about-me.md` |
 | Need an established method (process, terms) | `memory/topics/` |
 | Look up past work | `memory/sessions/` |
 

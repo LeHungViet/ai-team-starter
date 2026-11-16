@@ -5,7 +5,7 @@ description: Save the working session into the folder's memory — write a sessi
 
 # save-session — Save the session to memory
 
-The folder's memory: `memory/`, `projects/<name>/lessons.md`, `assistants/<name>/lessons.md`, `about-me/` (see Article 6 of `AGENTS.md`, map in `START-HERE.md`). This skill **never edits `AGENTS.md`**.
+The folder's memory: `memory/`, `projects/<name>/lessons.md`, `assistants/<name>/lessons.md`, `about-me.md` (see Article 6 of `AGENTS.md`, map in `START-HERE.md`). This skill **never edits `AGENTS.md`**.
 
 No `memory/MEMORY.md` yet → create `memory/MEMORY.md`, `memory/lessons.md`, `memory/topics/`, `memory/sessions/` from the templates in `../setup/templates/memory/`, then continue.
 
@@ -64,7 +64,7 @@ One lesson = **one specific, checkable line**, with why and date: `- <rule> — 
 ## Step 3b — Knowledge and profile (not lessons)
 
 - **Reusable knowledge** (methods proven to work, processes, terms, values you look up again) → `memory/topics/<topic>.md`, one file per topic, lowercase-hyphenated. Topic file exists → add to the right section, don't create a duplicate. New file → add one line to the `topics/` index in `MEMORY.md`.
-- **Things the user states about themselves** (new role, goals, people they work with) → `about-me/profile.md`. **The user corrects the voice of something written on their behalf** → `about-me/voice.md` (their exact words, with examples if given). No guesses.
+- **Things the user states about themselves** (new role, goals, people they work with) → `about-me.md`. **The user corrects the voice of something written on their behalf** → "Voice when writing on their behalf" in `about-me.md` (their exact words, with examples if given). No guesses.
 
 Lesson = a rule drawn from a mistake ("don't do X because Y"). Knowledge = a method or fact to reuse. Don't mix them.
 
@@ -76,4 +76,4 @@ Lesson = a rule drawn from a mistake ("don't do X because Y"). Knowledge = a met
 
 ## Step 5 — Report
 
-2–4 lines: which log file, how many lessons into which files, open items. If `memory/sessions/` has more than 15 logs since the last tidy-up (noted in `MEMORY.md`) → suggest running `tidy-memory`.
+2–4 lines: which log file, how many lessons into which files, open items. If it has been **at least 7 days and at least 5 sessions** since the last tidy-up (the "Last tidy-up" line in `MEMORY.md`; none yet → count from the first log) → suggest running `tidy-memory`; if the user wants it done regularly, schedule it weekly per Article 7.4.

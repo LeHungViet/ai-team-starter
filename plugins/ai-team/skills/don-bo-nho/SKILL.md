@@ -1,6 +1,6 @@
 ---
 name: don-bo-nho
-description: Gom và dọn bộ nhớ của folder định kỳ — gộp bài học trùng, tóm tắt nhật ký cũ theo tháng, chuyển bản gốc vào archive (không xoá), sửa mục lục, và đề xuất bài học nào nên nâng thành luật trong AGENTS.md. Dùng khi người dùng nói "dọn bộ nhớ", "gom bộ nhớ", "tổng kết tháng", "consolidate memory", "clean up memory", hoặc khi luu-phien gợi ý vì nhật ký đã nhiều.
+description: Gom và dọn bộ nhớ của folder định kỳ — gộp bài học trùng, tóm tắt nhật ký cũ theo tháng, chuyển bản gốc vào archive (không xoá), sửa mục lục, và đề xuất bài học nào nên nâng thành luật trong AGENTS.md. Dùng khi người dùng nói "dọn bộ nhớ", "gom bộ nhớ", "tổng kết tháng", "consolidate memory", "clean up memory", "dream", "memory dream", hoặc khi luu-phien gợi ý vì đã lâu chưa dọn.
 ---
 
 # don-bo-nho — Gom và dọn bộ nhớ

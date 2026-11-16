@@ -1,6 +1,6 @@
 {
   "name": "ai-team-en",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "AI Team Starter (English) — set up your own AI team in a working folder: an AGENTS.md constitution, a START-HERE.md folder map, a user profile, assistants in a standard format, projects with a source of truth, and memory that saves lessons every session. Right after install, the agent offers setup.",
   "author": {
     "name": "Agent Pro",
@@ -22,7 +22,7 @@
   "interface": {
     "displayName": "AI Team Starter (English)",
     "shortDescription": "Set up an AGENTS.md constitution, a memory folder and named AI assistants for your working folder",
-    "longDescription": "After install, Codex asks you a few questions, then builds AGENTS.md (constitution), START-HERE.md (folder map), an about-me/ profile and a memory/ folder. At the end of each task the agent runs save-session to log the session, lessons and knowledge. Add more when you need it: add-assistant, add-project, organize-folder, add-lesson, tidy-memory, health-check.",
+    "longDescription": "After install, Codex asks you a few questions, then builds AGENTS.md (constitution), START-HERE.md (folder map), an about-me.md profile and a memory/ folder. At the end of each task the agent runs save-session to log the session, lessons and knowledge. Add more when you need it: add-assistant, add-project, organize-folder, add-lesson, tidy-memory, health-check.",
     "developerName": "Agent Pro",
     "category": "Productivity"
   }

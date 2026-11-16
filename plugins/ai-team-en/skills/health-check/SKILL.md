@@ -13,16 +13,16 @@ description: Check whether the working folder follows its rules and its map — 
 |---|---|---|
 | 1 | Framework exists | `AGENTS.md` and `START-HERE.md` exist. Missing → stop, offer `setup` (upgrade if it's an older folder). |
 | 2 | `CLAUDE.md` imports | `CLAUDE.md` has `@AGENTS.md` and `@START-HERE.md`. A `CLAUDE.md` that copies the rules instead → report "the two copies will drift apart". |
-| 3 | Lean constitution | `AGENTS.md` under 120 lines; no assistant/project tables, detailed profile, lessons or logs (those belong in `START-HERE.md`, `about-me/`, `memory/`). |
+| 3 | Lean constitution | `AGENTS.md` under 120 lines; no assistant/project tables, detailed profile, lessons or logs (those belong in `START-HERE.md`, `about-me.md`, `memory/`). |
 | 4 | Leftover placeholders | No `{{` or `[NAME` in any `.md` of the framework. |
 | 5 | Contradicting rules | Read the articles and lessons; point out pairs that say opposite things. |
 | 6 | Map matches reality | Every branch in the `START-HERE.md` tree exists; every root folder appears in the tree (skip `.git`, `.claude`, `.codex`, `node_modules`…). List mismatches. |
 | 7 | Assistants | Every row in the **Assistant directory** has `assistants/<name>/` with `ROLE.md`, `lessons.md`, `outputs/`; every folder in `assistants/` has a row. Old-style files `assistants/<name>.md` → propose upgrading with `setup`. |
 | 8 | Assistant format | Every `ROLE.md` has all 9 sections by name: Identity · Call when · Personality · Expertise · How to work · Communication · Does not do · Own principles · Where results go. List missing sections per assistant. |
 | 9 | Projects | Every row in **Projects** has `BRIEF.md` and `lessons.md`. A code project (`package.json`, `.git`, `requirements.txt`, `Dockerfile`… or the BRIEF mentions a repo) without a SOURCE OF TRUTH block → report. Verification older than 90 days → remind. A file like "READ-FIRST", "SUPERSEDED", "NOTE-moved" saying the source changed while the BRIEF didn't → report as high. |
-| 10 | User profile | `about-me/profile.md` and `about-me/voice.md` exist. |
+| 10 | User profile | `about-me.md` exists, including "Voice when writing on their behalf". |
 | 11 | Memory | `memory/MEMORY.md`, `memory/lessons.md`, `memory/topics/`, `memory/sessions/` exist. Newest session log older than 14 days while the folder has recent changes → "sessions may not be getting saved". More than 15 logs since the last tidy-up → suggest `tidy-memory`. A file in `topics/` missing from the `MEMORY.md` index → report. |
-| 12 | Clean root | The root holds only `AGENTS.md`, `CLAUDE.md`, `START-HERE.md` and the folders in the tree; list stray files. |
+| 12 | Clean root | The root holds only `AGENTS.md`, `CLAUDE.md`, `START-HERE.md`, `about-me.md` and the folders in the tree; list stray files. |
 
 ## Report
 

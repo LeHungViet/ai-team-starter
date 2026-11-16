@@ -5,7 +5,7 @@ description: Lưu phiên làm việc vào bộ nhớ của folder — ghi nhật
 
 # luu-phien — Lưu phiên vào bộ nhớ
 
-Bộ nhớ của folder: `bo-nho/`, `du-an/<tên>/bai-hoc.md`, `tro-ly/<tên>/bai-hoc.md`, `nguoi-dung/` (xem Điều 6 trong `AGENTS.md`, bản đồ trong `START-HERE.md`). Skill này **không sửa `AGENTS.md`**.
+Bộ nhớ của folder: `bo-nho/`, `du-an/<tên>/bai-hoc.md`, `tro-ly/<tên>/bai-hoc.md`, `nguoi-dung.md` (xem Điều 6 trong `AGENTS.md`, bản đồ trong `START-HERE.md`). Skill này **không sửa `AGENTS.md`**.
 
 Chưa có `bo-nho/` → tạo `bo-nho/BO-NHO.md`, `bo-nho/bai-hoc.md`, `bo-nho/chu-de/`, `bo-nho/nhat-ky/` theo mẫu trong `../bat-dau/templates/bo-nho/`, rồi làm tiếp.
 
@@ -64,7 +64,7 @@ Một bài học = **một dòng cụ thể, kiểm được**, kèm vì sao và
 ## Bước 3b — Kiến thức và hồ sơ (khác bài học)
 
 - **Kiến thức dùng lại** (cách làm đã chứng minh chạy được, quy trình, thuật ngữ, thông số hay tra) → `bo-nho/chu-de/<chủ-đề>.md`, mỗi chủ đề một file, tên viết thường không dấu. Đã có file chủ đề → thêm vào đúng mục, không tạo file trùng. File mới → thêm một dòng vào mục lục `chu-de/` trong `BO-NHO.md`.
-- **Điều người dùng nói rõ về mình** (vai trò mới, mục tiêu, người hay làm việc cùng) → `nguoi-dung/ve-toi.md`. **Người dùng sửa giọng văn khi viết thay** → `nguoi-dung/van-phong.md` (ghi đúng lời họ, kèm ví dụ nếu có). Không ghi suy đoán.
+- **Điều người dùng nói rõ về mình** (vai trò mới, mục tiêu, người hay làm việc cùng) → `nguoi-dung.md`. **Người dùng sửa giọng văn khi viết thay** → mục "Giọng văn khi viết thay" trong `nguoi-dung.md` (ghi đúng lời họ, kèm ví dụ nếu có). Không ghi suy đoán.
 
 Bài học = luật rút từ sai lầm ("không làm X vì Y"). Kiến thức = cách làm / sự thật dùng lại. Không lẫn hai loại.
 
@@ -76,4 +76,4 @@ Bài học = luật rút từ sai lầm ("không làm X vì Y"). Kiến thức =
 
 ## Bước 5 — Báo
 
-2–4 dòng: file nhật ký nào, bao nhiêu bài học vào file nào, việc đang dở. Nếu `bo-nho/nhat-ky/` đã có hơn 15 file kể từ lần dọn gần nhất (ghi trong `BO-NHO.md`) → gợi ý chạy `don-bo-nho`.
+2–4 dòng: file nhật ký nào, bao nhiêu bài học vào file nào, việc đang dở. Kể từ lần dọn gần nhất (dòng "Lần dọn gần nhất" trong `BO-NHO.md`; chưa có thì tính từ nhật ký đầu tiên) đã **ít nhất 7 ngày và ít nhất 5 phiên** → gợi ý chạy `don-bo-nho`; người dùng muốn dọn đều thì đặt lịch hằng tuần theo Điều 7.4.

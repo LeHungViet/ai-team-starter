@@ -12,7 +12,7 @@ description: Set up a tidy folder structure for a working folder, or clean up a 
 ├── AGENTS.md          ← constitution (general rules)
 ├── CLAUDE.md          ← @AGENTS.md + @START-HERE.md
 ├── START-HERE.md      ← folder map: tree, task → file, assistants, projects
-├── about-me/          ← profile.md, voice.md
+├── about-me.md        ← user profile + voice
 ├── memory/            ← MEMORY.md, lessons.md, topics/, sessions/
 ├── assistants/<name>/ ← ROLE.md, lessons.md, outputs/
 ├── projects/<name>/   ← BRIEF.md, lessons.md + all project files

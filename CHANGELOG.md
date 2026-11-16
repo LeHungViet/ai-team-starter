@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.1 — 2026-11-16
+- **Điều 7 — Máy, trình duyệt và việc chờ** / Article 7 — Computer, browser and follow-ups trong `AGENTS.md`: AI tự thao tác trên máy theo thứ tự kết nối của app → trình duyệt → computer use; dùng trình duyệt thật với hồ sơ đã đăng nhập để khỏi đăng nhập lại; không xin mật khẩu trong chat, chỉ nhờ người dùng đúng bước đăng nhập; tự đặt lịch kiểm lại việc dở, việc cần test thêm. `CLAUDE.md` có dòng áp Điều 7 cho Claude (Claude in Chrome, computer use, scheduled task). `bat-dau` / `setup` thêm Điều 7 khi nâng cấp folder cũ.
+- **Gộp hồ sơ người dùng thành một file** `nguoi-dung.md` / `about-me.md` ở gốc folder (thay thư mục `nguoi-dung/` gồm `ve-toi.md` + `van-phong.md` / `about-me/` gồm `profile.md` + `voice.md`); giọng văn khi viết thay thành một mục trong file. Gốc folder giữ 4 file. `bat-dau` / `setup` gộp tự động khi nâng cấp folder bản 0.3.0, thư mục cũ vào `archive/`.
+- README: mục **Thói quen nên có** / Routines (lưu phiên, ghi bài học khi AI làm sai hoặc làm tốt, dọn bộ nhớ hằng tuần, kiểm tra). `don-bo-nho` / `tidy-memory` nhận thêm "dream", "memory dream"; `luu-phien` gợi ý dọn khi đã ≥ 7 ngày và ≥ 5 phiên.
+- Sơ đồ cấu trúc `docs/cau-truc.png` / `docs/structure.png` (kèm tên skill), gắn vào README.
+
 ## 0.3.0 — 2026-11-16
 - **`START-HERE.md` — bản đồ folder** / folder map: cây thư mục, bảng "việc gì → đọc file nào", danh bạ trợ lý, bảng dự án (chuyển ra khỏi `AGENTS.md`). `CLAUDE.md` import `@AGENTS.md` + `@START-HERE.md`. Skill đổi cấu trúc tự cập nhật bản đồ.
 - **Hồ sơ người dùng** `nguoi-dung/` (`ve-toi.md`, `van-phong.md`) / `about-me/` (`profile.md`, `voice.md`); `AGENTS.md` chỉ giữ 2 dòng tóm tắt.

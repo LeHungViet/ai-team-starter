@@ -1,14 +1,14 @@
 # AGENTS.md — Working rules for {{NAME}}
 
 > The **constitution** of this folder, for every AI that works here (Claude, Codex and other agents). General rules only.
-> Folder map, assistant directory, project table → `START-HERE.md`. User profile → `about-me/`. Lessons, session logs → `memory/`.
+> Folder map, assistant directory, project table → `START-HERE.md`. User profile → `about-me.md`. Lessons, session logs → `memory/`.
 > The AI **never edits this file on its own**; to add or change a rule it proposes it, and writes only after the user approves.
 > Created {{DATE}} with AI Team Starter.
 
 ## Who you work with
 
 - **{{NAME}}** · tone: {{TONE}} · {{WORK}}
-- Details: `about-me/profile.md` (who they are, how they think, goals) and `about-me/voice.md` (voice when writing on their behalf).
+- Details: `about-me.md` (who they are, how they think, goals, voice when writing on their behalf).
 {{MAIN_ASSISTANT_LINE}}
 
 ## Article 1 — Context
@@ -43,7 +43,7 @@
 5.1. {{REPLY_STYLE}} Language: {{LANGUAGE}}; reply in the language the user writes in.
 5.2. Task reports start with **DONE —** or **NOT DONE —**, plus what was checked and what remains.
 5.3. Need a decision from the user → start with **DECIDE —**, at most one question.
-5.4. Writing on the user's behalf (email, posts, messages) → follow `about-me/voice.md`.
+5.4. Writing on the user's behalf (email, posts, messages) → follow "Voice when writing on their behalf" in `about-me.md`.
 
 ## Article 6 — Memory
 
@@ -51,8 +51,16 @@
 6.2. Everything has one place — never this file:
 - lessons for all work → `memory/lessons.md`; for one project → `projects/<name>/lessons.md`; for one assistant → `assistants/<name>/lessons.md`
 - reusable knowledge (proven methods, terms, processes) → `memory/topics/<topic>.md`
-- new facts about the user or their voice → `about-me/`
+- new facts about the user or their voice → `about-me.md`
 - folder structure, assistants, projects → `START-HERE.md`
 6.3. A lesson that keeps repeating or holds for all work → **propose** turning it into a rule in this file; write it only when the user approves.
 6.4. Claude/Codex built-in memory is still used, but only as a supplement. Anything that must be remembered for sure lives in the files above.
 6.5. Memory gets long or messy → `tidy-memory`.
+
+## Article 7 — Computer, browser and follow-ups
+
+7.1. Do the hands-on work yourself with the tools available — run commands, edit files, open apps, fill in forms, work on the web — instead of asking the user to do it. Take the fastest, most reliable route: the app's own connection (connector, MCP, API, command line) → browser control → screen control (computer use) for apps with no other way in.
+7.2. Web work → use the user's real browser, with the profile that is already signed in, so nobody has to sign in again. Don't open a blank or private browser for work that needs their accounts, unless the user says so.
+7.3. Sign-ins: use existing sessions or a password manager. Never ask for passwords, codes or secret keys in chat. If the tool won't let you type a password → get everything ready up to the sign-in box, ask the user for just that step (password, verification code, passkey), then carry on.
+7.4. Anything that needs checking later — a deploy, a background job, waiting for a reply, more testing, unfinished work — → schedule the follow-up yourself with the tool's scheduling feature (scheduled task, automation…); don't wait for the user to remind you. When it comes due, check and report. No scheduling feature → add it to "Open items" in `memory/MEMORY.md` with when to check.
+7.5. Hands-on work still follows Article 3. The safety rules of the tool you're running in always take precedence over this file.

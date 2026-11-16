@@ -48,7 +48,7 @@ Rồi cài **AI Team Starter** trong ứng dụng Codex — Codex chạy bước
    - **`AGENTS.md`** — hiến pháp: luật tổng quát duy nhất (Codex và Claude đều đọc). AI không tự sửa file này.
    - **`CLAUDE.md`** — chỉ `@AGENTS.md` + `@START-HERE.md` và vài dòng riêng của Claude.
    - **`START-HERE.md`** — bản đồ folder: cây thư mục, việc gì đọc file nào, danh bạ trợ lý, bảng dự án. AI nhìn vào đây để biết tìm gì ở đâu.
-   - **`nguoi-dung/`** — hồ sơ của bạn (`ve-toi.md`) và giọng văn khi AI viết thay (`van-phong.md`).
+   - **`nguoi-dung.md`** — hồ sơ của bạn và giọng văn khi AI viết thay.
    - **`bo-nho/`** — bộ nhớ: bài học, kiến thức theo chủ đề, nhật ký từng phiên, việc đang dở. Cuối mỗi việc AI chạy `luu-phien` để ghi vào đây.
 4. Từ chối cũng được; lúc nào cần thì gõ `/bat-dau`.
 
@@ -58,7 +58,7 @@ Không thấy lời mời (ví dụ trên Windows, hoặc nền tảng chưa ch�
 
 | Skill | Làm gì |
 |---|---|
-| `bat-dau` | Dựng (hoặc nâng cấp) bộ khung: `AGENTS.md`, `CLAUDE.md`, `START-HERE.md`, `nguoi-dung/`, `bo-nho/`. **Chạy đầu tiên.** |
+| `bat-dau` | Dựng (hoặc nâng cấp) bộ khung: `AGENTS.md`, `CLAUDE.md`, `START-HERE.md`, `nguoi-dung.md`, `bo-nho/`. **Chạy đầu tiên.** |
 | `them-tro-ly` | Thêm trợ lý theo **format chuẩn 9 mục** (`VAI.md`) + `bai-hoc.md` + `ket-qua/`. Gọi tên là AI vào vai. |
 | `them-du-an` | Tạo dự án với `BRIEF.md`; dự án có code thì kèm khối **NGUỒN SỰ THẬT**. |
 | `sap-xep-thu-muc` | Dựng hoặc dọn cấu trúc thư mục. Đề xuất trước, chỉ chuyển khi bạn đồng ý, **không bao giờ xoá**. |
@@ -67,16 +67,30 @@ Không thấy lời mời (ví dụ trên Windows, hoặc nền tảng chưa ch�
 | `don-bo-nho` | Gộp bài học trùng, tóm tắt nhật ký cũ theo tháng, đề xuất bài học nào nên nâng thành luật. Không xoá. |
 | `kiem-tra` | Rà xem folder có đúng luật và đúng bản đồ không (START-HERE khớp cây thật, trợ lý đủ 9 mục…). Chỉ đọc. |
 
+## Thói quen nên có
+
+Bộ khung chỉ mạnh khi được dùng đều. Mấy thói quen nhỏ này giúp AI nhớ lâu và ít lặp lỗi:
+
+| Khi nào | Nói với AI | AI làm gì |
+|---|---|---|
+| Xong một việc, hoặc trước khi đóng phiên | "lưu phiên" / "lưu lại" | Chạy `luu-phien`: ghi nhật ký, bài học vào đúng chỗ, việc đang dở. AI cũng tự chạy cuối mỗi việc; quên thì hook nhắc lưu bù ở phiên sau. |
+| AI làm sai, hoặc làm rất tốt và bạn muốn lần sau làm y vậy | "ghi bài học: …" / "lần sau nhớ …" | Chạy `ghi-bai-hoc`: ghi ngay vào `bo-nho/bai-hoc.md` (hoặc bài học của dự án / trợ lý), phiên sau trên Claude lẫn Codex đều theo. |
+| Mỗi tuần, hoặc khi AI gợi ý | "dọn bộ nhớ" | Chạy `don-bo-nho` (kiểu "memory dream"): gộp bài học trùng, tóm tắt nhật ký cũ, đề xuất bài học nào nên nâng thành luật — chỉ ghi khi bạn duyệt. |
+| Thỉnh thoảng, hoặc khi thấy AI "lạc" | "kiểm tra folder" | Chạy `kiem-tra`: rà luật, bản đồ, bộ nhớ, chỉ báo chỗ lệch, không tự sửa. |
+| Có việc cần xem lại sau (deploy, chờ phản hồi, test thêm) | không cần nói | Theo Điều 7, AI tự đặt lịch kiểm lại nếu công cụ có hẹn giờ; không có thì ghi vào "Việc đang dở". |
+
 ## Cấu trúc sau khi dùng đủ
+
+![Sơ đồ cấu trúc AI Team Starter](plugins/ai-team/docs/cau-truc.png)
+
+Bản vector: [cau-truc.svg](plugins/ai-team/docs/cau-truc.svg). Dạng cây chữ:
 
 ```
 folder-cua-ban/
 ├── AGENTS.md            ← hiến pháp: luật tổng quát (bản duy nhất)
 ├── CLAUDE.md            ← @AGENTS.md + @START-HERE.md
 ├── START-HERE.md        ← bản đồ folder: cây, việc gì đọc gì, danh bạ trợ lý, dự án
-├── nguoi-dung/
-│   ├── ve-toi.md        ← bạn là ai, công việc, cách nghĩ, mục tiêu
-│   └── van-phong.md     ← giọng văn khi AI viết thay
+├── nguoi-dung.md        ← bạn là ai, công việc, mục tiêu, giọng văn khi AI viết thay
 ├── bo-nho/
 │   ├── BO-NHO.md        ← mục lục + việc đang dở
 │   ├── bai-hoc.md       ← bài học chung
@@ -97,7 +111,7 @@ folder-cua-ban/
 
 ## Vì sao làm như vậy
 
-- **Hiến pháp, bản đồ, bộ nhớ — mỗi thứ một chỗ.** `AGENTS.md` là luật; `START-HERE.md` là bản đồ để AI biết tìm gì ở đâu; `nguoi-dung/` là hồ sơ; `bo-nho/` là trí nhớ. Hiến pháp ngắn nên AI đọc kỹ; bản đồ đổi theo cấu trúc mà không phải đụng vào luật.
+- **Hiến pháp, bản đồ, bộ nhớ — mỗi thứ một chỗ.** `AGENTS.md` là luật; `START-HERE.md` là bản đồ để AI biết tìm gì ở đâu; `nguoi-dung.md` là hồ sơ; `bo-nho/` là trí nhớ. Hiến pháp ngắn nên AI đọc kỹ; bản đồ đổi theo cấu trúc mà không phải đụng vào luật.
 - **Một file luật, hai nền tảng.** Claude Code đọc được `AGENTS.md`; `CLAUDE.md` chỉ cần import nó. Không phải giữ hai bản luật rồi để chúng lệch nhau.
 - **Hiến pháp tách khỏi bộ nhớ.** `AGENTS.md` chỉ giữ luật tổng quát, ngắn, ít đổi — AI không tự sửa. Bài học và nhật ký nằm trong `bo-nho/` và `bai-hoc.md` của từng dự án; bài học lặp lại nhiều lần mới được đề xuất nâng thành luật.
 - **Bộ nhớ riêng, không phó mặc memory có sẵn.** Memory của Claude/Codex không chia sẻ giữa hai nền tảng, có thể bỏ sót, và phiên sau vẫn lặp lỗi. Nên cuối mỗi việc AI chạy `luu-phien`; phiên nào kết thúc mà quên lưu thì hook nhắc lưu bù ở phiên sau (Claude Code, Codex sau khi duyệt hook).
@@ -122,6 +136,18 @@ folder-cua-ban/
 - Claude app: Customize → Plugins → Add → Add marketplace → Add from a repository → `LeHungViet/ai-team-starter` → install **ai-team-en**. To update: Manage marketplaces → … → Check for updates.
 - Codex: `codex plugin marketplace add LeHungViet/ai-team-starter`, then in the Codex app open Plugins, search "AI Team", install **AI Team Starter (English)**, press **Try now**, **choose your project folder**, and send. CLI: `codex plugin add ai-team-en@ai-team-starter`; skills are named `ai-team-en:setup`, `ai-team-en:save-session`…; the hooks run after you trust them once.
 
+**Routines worth keeping**
+
+| When | Say | What the AI does |
+|---|---|---|
+| A task is done, or before closing the session | "save the session" | Runs `save-session`: session log, lessons in the right place, open items. It also runs on its own at the end of each task; if forgotten, the hook asks to catch up next session. |
+| The AI got something wrong — or got it right and you want it done that way again | "add a lesson: …" / "next time remember …" | Runs `add-lesson`: writes it to `memory/lessons.md` (or the project / assistant lessons) right away, so later sessions on Claude and Codex follow it. |
+| Weekly, or when the AI suggests it | "tidy memory" | Runs `tidy-memory` ("memory dream"): merges duplicate lessons, summarizes old logs, proposes lessons to promote into rules — written only after you approve. |
+| Now and then, or when the AI seems lost | "health check" | Runs `health-check`: reviews rules, map and memory, reports drift, changes nothing. |
+| Something needs a later look (deploy, waiting for a reply, more testing) | nothing | Per Article 7, the AI schedules the follow-up itself if the tool can; otherwise it goes to "Open items". |
+
+**Structure diagram:** [structure.png](plugins/ai-team-en/docs/structure.png) · [SVG](plugins/ai-team-en/docs/structure.svg)
+
 **What you get**
 
 ```
@@ -129,7 +155,7 @@ your-folder/
 ├── AGENTS.md          ← constitution: general rules only (the single rules file)
 ├── CLAUDE.md          ← @AGENTS.md + @START-HERE.md
 ├── START-HERE.md      ← folder map: tree, task → file, assistants, projects
-├── about-me/          ← profile.md, voice.md
+├── about-me.md        ← profile + voice
 ├── memory/
 │   ├── MEMORY.md      ← index + open items
 │   ├── lessons.md     ← general lessons
