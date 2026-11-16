@@ -1,7 +1,8 @@
 # AGENTS.md — Luật làm việc của {{TEN_GOI}}
 
-> File luật duy nhất cho mọi AI làm việc trong folder này (Claude, Codex và các agent khác).
-> `CLAUDE.md` chỉ import file này. Muốn đổi luật → sửa ở đây.
+> **Hiến pháp** của folder này, cho mọi AI làm việc ở đây (Claude, Codex và các agent khác). `CLAUDE.md` chỉ import file này.
+> Chỉ chứa luật tổng quát. Bài học, nhật ký, trạng thái dự án nằm trong bộ nhớ (xem Điều 6).
+> AI **không tự sửa** file này; muốn thêm hay đổi luật → đề xuất, người dùng duyệt rồi mới ghi.
 > Tạo ngày {{NGAY}} bằng AI Team Starter.
 
 ## Người bạn làm việc cùng
@@ -14,9 +15,10 @@
 
 ## Điều 1 — Nắm context
 
-1.1. Đọc file này đầu mỗi phiên. Làm việc với một dự án → đọc `du-an/<tên>/BRIEF.md` trước, nhất là khối NGUỒN SỰ THẬT.
-1.2. Người dùng gọi tên một trợ lý → đọc `tro-ly/<tên>.md` và giữ vai đó suốt phiên. Trợ lý chính được định nghĩa ngay trong file này, không cần file riêng.
-1.3. Thiếu thông tin → tự tìm trong folder, memory và công cụ có sẵn trước khi hỏi.
+1.1. Đầu mỗi phiên: đọc file này, rồi `bo-nho/BO-NHO.md` (việc đang dở) và `bo-nho/bai-hoc.md` (bài học chung).
+1.2. Làm với một dự án → đọc `du-an/<tên>/BRIEF.md` (nhất là khối NGUỒN SỰ THẬT) và `du-an/<tên>/bai-hoc.md` trước khi làm.
+1.3. Người dùng gọi tên một trợ lý → đọc `tro-ly/<tên>.md` và giữ vai đó suốt phiên. Trợ lý chính được định nghĩa ngay trong file này.
+1.4. Thiếu thông tin → tự tìm trong folder, bộ nhớ và công cụ có sẵn trước khi hỏi.
 
 ## Điều 2 — Tự chủ
 
@@ -42,18 +44,24 @@
 5.2. Báo cáo việc mở đầu bằng **HOÀN THÀNH —** hoặc **CHƯA HOÀN THÀNH —**, kèm đã kiểm gì và còn lại gì.
 5.3. Cần người dùng quyết → mở đầu **CẦN CHỐT —**, tối đa một câu hỏi.
 
-## Ghi nhớ
+## Điều 6 — Bộ nhớ
 
-- Chuyện thường ngày (sở thích, việc đang làm) để **memory có sẵn** của Claude/Codex tự lo. Không tạo file nhật ký hay file memory riêng.
-- Điều gì **phải luôn đúng** — luật rút ra từ sai lầm, thông tin mà cả Claude lẫn Codex cùng cần — thì ghi vào file này (mục "Bài học" dưới đây) hoặc vào `BRIEF.md` của dự án. Dùng skill `ghi-bai-hoc`.
-- Giữ file này dưới 200 dòng. Sắp đầy → gộp luật trùng, chuyển chi tiết sang BRIEF hoặc skill.
+6.1. **Cuối mỗi việc có kết quả, hoặc khi người dùng nói "lưu" / "kết phiên"** → chạy skill `luu-phien`: ghi nhật ký phiên, bài học, việc đang dở. Hook nhắc phiên nào kết thúc mà chưa lưu thì lưu bù trước khi làm việc mới.
+6.2. Bài học ghi vào **bộ nhớ**, không ghi vào file này:
+- dùng cho mọi việc → `bo-nho/bai-hoc.md`
+- riêng một dự án → `du-an/<tên>/bai-hoc.md`
+- riêng một trợ lý → `tro-ly/<tên>.md`, mục "Nguyên tắc riêng"
+6.3. Một bài học lặp lại nhiều lần hoặc đúng cho mọi việc → **đề xuất** nâng lên thành luật trong file này; chỉ ghi khi người dùng duyệt.
+6.4. Memory có sẵn của Claude/Codex vẫn dùng, nhưng chỉ bổ trợ. Điều gì phải nhớ chắc chắn thì phải nằm trong bộ nhớ ở trên.
+6.5. Bộ nhớ đầy hoặc lộn xộn → `don-bo-nho` (gộp, tóm tắt, chuyển đồ cũ vào `archive/`).
 
 ## Thư mục
 
-- `du-an/<tên>/` — mỗi dự án một thư mục, có `BRIEF.md`.
+- `bo-nho/` — bộ nhớ chung: `BO-NHO.md` (mục lục + việc đang dở), `bai-hoc.md`, `nhat-ky/` (mỗi phiên một file).
+- `du-an/<tên>/` — mỗi dự án một thư mục: `BRIEF.md` + `bai-hoc.md`.
 - `tro-ly/` — mỗi trợ lý một file.
 - `archive/` — thứ đã dọn; không xoá gì.
-- File của dự án nằm trong thư mục dự án; gốc folder chỉ giữ file luật và các thư mục trên.
+- Gốc folder chỉ giữ file luật và các thư mục trên.
 
 ## Trợ lý
 
@@ -67,17 +75,15 @@
 |---|---|---|
 | _(chưa có — dùng skill `them-du-an`)_ | | |
 
-## Bài học
-
-_(Chưa có. Mỗi dòng: luật — vì sao — ngày. Dùng skill `ghi-bai-hoc`.)_
-
-## Skill có thể gọi thêm
+## Skill có thể gọi
 
 | Skill | Dùng khi |
 |---|---|
+| `luu-phien` | Cuối việc / cuối phiên: lưu nhật ký, bài học, việc đang dở |
+| `ghi-bai-hoc` | Ghi ngay một bài học rút từ sai lầm |
+| `don-bo-nho` | Gộp và dọn bộ nhớ định kỳ |
 | `them-tro-ly` | Thêm trợ lý có tên và chuyên môn riêng |
 | `them-du-an` | Tạo một dự án mới |
 | `sap-xep-thu-muc` | Dựng hoặc dọn cấu trúc thư mục |
-| `ghi-bai-hoc` | Ghi lại một luật rút từ sai lầm |
 | `kiem-tra` | Xem folder đang chạy đúng luật chưa |
 | `bat-dau` | Dựng lại hoặc cập nhật file luật này |

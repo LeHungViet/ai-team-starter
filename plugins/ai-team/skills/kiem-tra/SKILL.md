@@ -1,6 +1,6 @@
 ---
 name: kiem-tra
-description: Rà folder làm việc xem có đang chạy đúng luật trong AGENTS.md không — file luật quá dài hay mâu thuẫn, CLAUDE.md còn import AGENTS.md không, dự án có code mà thiếu NGUỒN SỰ THẬT, file nằm sai chỗ, trợ lý thiếu file. Chỉ đọc, không tự sửa. Dùng khi người dùng nói "kiểm tra", "rà soát", "audit", "folder có ổn không", "check my setup", "health check".
+description: Rà folder làm việc xem có đang chạy đúng luật trong AGENTS.md không — file luật quá dài hay mâu thuẫn, bộ nhớ có được lưu đều không, CLAUDE.md còn import AGENTS.md không, dự án có code mà thiếu NGUỒN SỰ THẬT, file nằm sai chỗ, trợ lý thiếu file. Chỉ đọc, không tự sửa. Dùng khi người dùng nói "kiểm tra", "rà soát", "audit", "folder có ổn không", "check my setup", "health check".
 ---
 
 # kiem-tra — Rà xem folder có đúng luật
@@ -20,6 +20,8 @@ description: Rà folder làm việc xem có đang chạy đúng luật trong AGE
 | 7 | Dự án | Mỗi hàng trong bảng **Dự án** có `BRIEF.md`. Dự án có code (có `package.json`, `.git`, `requirements.txt`, `Dockerfile`… hoặc BRIEF nhắc tới repo) mà thiếu khối NGUỒN SỰ THẬT → báo. Ngày xác minh quá 90 ngày → nhắc. |
 | 8 | Gốc folder sạch | Gốc chỉ có file luật và các thư mục trong mục **Thư mục** của `AGENTS.md`; liệt kê thứ nằm ngoài. Thư mục được nhắc mà chưa tạo thì không phải lỗi (tạo khi cần). |
 | 9 | Ghi chú cạnh BRIEF | Trong thư mục dự án có file kiểu "ĐỌC-TRƯỚC", "SUPERSEDED", "NOTE-moved" nói nguồn đã đổi mà BRIEF không đổi → báo mức cao. |
+| 10 | Hiến pháp gọn | `AGENTS.md` không chứa bài học hay nhật ký (mục kiểu "## Bài học" có luật cụ thể, ngày sự cố) — những thứ đó thuộc `bo-nho/`. Có → đề xuất chuyển sang `bo-nho/bai-hoc.md` (chạy `bat-dau` để nâng cấp). |
+| 11 | Bộ nhớ | Có `bo-nho/BO-NHO.md`, `bo-nho/bai-hoc.md`, `bo-nho/nhat-ky/`; mỗi dự án có `bai-hoc.md`. Nhật ký mới nhất cũ hơn 14 ngày trong khi folder vẫn có file mới sửa → báo "có thể đang không lưu phiên". Hơn 15 nhật ký từ lần dọn gần nhất → gợi ý `don-bo-nho`. |
 
 ## Báo cáo
 
@@ -27,4 +29,4 @@ Mở đầu bằng **HOÀN THÀNH —** (đã kiểm hết) hoặc **CHƯA HOÀN
 
 Bảng: `| Luật | Mức (✅ / ⚠️ / ❌) | Bằng chứng (file, dòng, số liệu) |`. Chỉ ghi điều đã thấy tận mắt; không đoán.
 
-Cuối: tối đa 3 việc nên sửa trước, mỗi việc một dòng, kèm skill phù hợp (`sap-xep-thu-muc`, `them-du-an`, `ghi-bai-hoc`, `bat-dau`). Hỏi người dùng có muốn sửa không.
+Cuối: tối đa 3 việc nên sửa trước, mỗi việc một dòng, kèm skill phù hợp (`sap-xep-thu-muc`, `them-du-an`, `ghi-bai-hoc`, `luu-phien`, `don-bo-nho`, `bat-dau`). Hỏi người dùng có muốn sửa không.

@@ -5,7 +5,7 @@ description: Tạo một dự án mới trong folder làm việc với tài li�
 
 # them-du-an — Tạo một dự án
 
-Kết quả: `du-an/<ten>/BRIEF.md` và một dòng mới trong bảng **Dự án** của `AGENTS.md`.
+Kết quả: `du-an/<ten>/BRIEF.md`, `du-an/<ten>/bai-hoc.md` (bài học riêng của dự án) và một dòng mới trong bảng **Dự án** của `AGENTS.md`.
 
 Chưa có `AGENTS.md` → mời chạy `bat-dau` trước.
 
@@ -21,11 +21,13 @@ Chưa có `AGENTS.md` → mời chạy `bat-dau` trước.
 2. Dựa vào `templates/BRIEF.template.md`.
 3. **Dự án có code hoặc app:** khối NGUỒN SỰ THẬT ở đầu file là **bắt buộc**. Tự tìm trước (đọc thư mục, `git remote -v`, file cấu hình deploy) rồi mới hỏi. Dòng nào chưa xác minh được → ghi "chưa xác minh", không đoán, không bỏ trống. Ghi ngày xác minh.
 4. **Dự án chỉ là tài liệu:** thay khối NGUỒN SỰ THẬT bằng một dòng: "Không có code — không áp dụng."
-5. Thêm một hàng vào bảng **Dự án** trong `AGENTS.md`: `| Tên | du-an/<ten>/ | Mới |`.
+5. Tạo `du-an/<ten>/bai-hoc.md` từ `templates/bai-hoc.template.md`.
+6. Thêm một hàng vào bảng **Dự án** trong `AGENTS.md`: `| Tên | du-an/<ten>/ | Mới |`. Nếu bảng đang có dòng "(chưa có …)" thì thay dòng đó.
 
 ## Luật cần nhắc người dùng (một lần)
 
 - Khi nguồn sự thật thay đổi (đổi repo, đổi nơi deploy) → **sửa ngay trong BRIEF**, không tạo file mới bên cạnh. Một file ghi chú nằm cạnh mà BRIEF không đổi sẽ khiến AI đọc đúng chỗ mà vẫn làm sai.
+- Bài học riêng của dự án nằm trong `bai-hoc.md` của dự án; `luu-phien` và `ghi-bai-hoc` tự ghi vào đó. AI đọc file này mỗi khi làm việc với dự án.
 - Mỗi lần mất nhiều thời gian vì một "bẫy" (lệnh deploy lấy nhầm nguồn, lệnh restart không restart thật…) → ghi vào mục "Bẫy đã biết".
 
 ## Bước 3 — Báo

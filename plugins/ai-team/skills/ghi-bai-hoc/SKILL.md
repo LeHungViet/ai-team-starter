@@ -1,33 +1,35 @@
 ---
 name: ghi-bai-hoc
-description: Ghi một bài học hoặc luật phải luôn đúng (thường rút ra từ một sai lầm) vào đúng chỗ — AGENTS.md nếu dùng chung, BRIEF.md nếu thuộc một dự án — để mọi phiên sau, kể cả trên Claude lẫn Codex, đều làm theo. Dùng khi người dùng nói "ghi lại bài học", "nhớ luật này", "lần sau đừng làm vậy nữa", "ghi vào luật", "remember this rule", "add a lesson".
+description: Ghi ngay một bài học (thường rút ra từ một sai lầm hoặc khi người dùng sửa lưng AI) vào bộ nhớ của folder — bo-nho/bai-hoc.md nếu dùng chung, du-an/<tên>/bai-hoc.md nếu thuộc một dự án — để mọi phiên sau, trên Claude lẫn Codex, đều làm theo. Không ghi vào AGENTS.md trừ khi người dùng duyệt nâng thành luật. Dùng khi người dùng nói "ghi lại bài học", "nhớ luật này", "lần sau đừng làm vậy nữa", "remember this", "add a lesson".
 ---
 
-# ghi-bai-hoc — Ghi luật phải luôn đúng
+# ghi-bai-hoc — Ghi một bài học vào bộ nhớ
 
-Memory có sẵn của Claude/Codex nhớ chuyện thường ngày, nhưng nó **không chia sẻ** giữa Claude và Codex, giữa các máy, và **không đảm bảo** luôn được nạp. Luật nào phải luôn đúng thì ghi vào file.
+`AGENTS.md` là hiến pháp: chỉ luật tổng quát, không sửa bừa. Bài học nằm trong bộ nhớ (Điều 6 của `AGENTS.md`). Memory có sẵn của Claude/Codex không chia sẻ giữa hai công cụ và không chắc được nạp — nên bài học phải nằm trong file.
 
-## Bước 1 — Xác định luật
+## Bước 1 — Rút thành một dòng
 
-- Rút thành **một dòng**: hành vi cụ thể, kiểm được. Tốt: "Không deploy sau 16h thứ Sáu." Chưa tốt: "Cẩn thận khi deploy."
-- Kèm **vì sao**: một vế ngắn (sự cố gì, ngày nào).
+- Hành vi cụ thể, kiểm được. Tốt: "Không deploy sau 16h thứ Sáu." Chưa tốt: "Cẩn thận khi deploy."
+- Kèm **vì sao** (sự cố gì) và ngày.
 - Không rõ luật là gì → hỏi lại đúng một câu.
+
+Định dạng: `- <luật> — <vì sao> — <YYYY-MM-DD>`
 
 ## Bước 2 — Chọn chỗ ghi
 
-| Luật áp dụng cho | Ghi vào |
+| Bài học đúng cho | Ghi vào |
 |---|---|
-| Mọi việc trong folder | `AGENTS.md`, mục **Bài học** |
-| Một dự án | `du-an/<ten>/BRIEF.md`, mục **Bài học của dự án** (hoặc **Bẫy đã biết** nếu là bẫy kỹ thuật) |
-| Một trợ lý | `tro-ly/<ten>.md`, mục **Nguyên tắc riêng** |
+| Mọi việc trong folder | `bo-nho/bai-hoc.md` |
+| Một dự án | `du-an/<tên>/bai-hoc.md` (chưa có thì tạo; bẫy kỹ thuật thì thêm vào "Bẫy đã biết" trong BRIEF) |
+| Một trợ lý | `tro-ly/<tên>.md`, mục "Nguyên tắc riêng" |
 
-Định dạng mỗi dòng: `- <luật> — <vì sao> — <YYYY-MM-DD>`
+Chưa có `bo-nho/` → tạo theo mẫu `../bat-dau/templates/bo-nho/`.
 
-## Bước 3 — Giữ file gọn
+## Bước 3 — Giữ gọn
 
-- Có luật cũ trùng hoặc mâu thuẫn → sửa luật cũ thay vì thêm dòng mới; mâu thuẫn thì hỏi người dùng giữ bên nào.
-- `AGENTS.md` sẽ vượt 200 dòng → đề xuất gộp các luật gần nhau hoặc chuyển phần thuộc dự án sang BRIEF, rồi mới thêm.
-- Xoá dòng mục "(Chưa có …)" khi thêm bài học đầu tiên.
+- Đọc file đích trước. Trùng → sửa dòng cũ. Mâu thuẫn → hỏi người dùng giữ bên nào.
+- Xoá dòng "_(chưa có)_" khi thêm bài học đầu tiên.
+- Người dùng muốn đây là **luật hiến pháp** (đúng cho mọi việc, phải luôn nằm trong `AGENTS.md`) → nhắc lại luật một dòng và hỏi duyệt. Được duyệt: chép `AGENTS.md` vào `archive/AGENTS-<YYYY-MM-DD>.md`, ghi vào điều phù hợp, giữ file dưới 200 dòng.
 
 ## Bước 4 — Báo
 

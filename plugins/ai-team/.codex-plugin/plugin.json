@@ -1,7 +1,7 @@
 {
   "name": "ai-team",
-  "version": "0.1.2",
-  "description": "AI Team Starter — dựng đội AI riêng trong folder làm việc: file luật AGENTS.md, trợ lý có tên, dự án có nguồn sự thật.",
+  "version": "0.2.0",
+  "description": "AI Team Starter — dựng đội AI riêng trong folder làm việc: file luật AGENTS.md, trợ lý có tên, dự án có nguồn sự thật, bộ nhớ tự lưu bài học mỗi phiên.",
   "author": {
     "name": "Agent Pro",
     "url": "https://agentpro.tech"
@@ -21,7 +21,7 @@
   "interface": {
     "displayName": "AI Team Starter",
     "shortDescription": "Dựng file luật AGENTS.md và đội trợ lý AI cho folder làm việc",
-    "longDescription": "Cài xong, Codex hỏi bạn vài câu rồi viết AGENTS.md cho folder. Gọi thêm khi cần: them-tro-ly, them-du-an, sap-xep-thu-muc, ghi-bai-hoc, kiem-tra.",
+    "longDescription": "Cài xong, Codex hỏi bạn vài câu rồi viết AGENTS.md (hiến pháp) và bộ nhớ bo-nho/ cho folder. Cuối mỗi việc AI chạy luu-phien để ghi nhật ký và bài học. Gọi thêm khi cần: them-tro-ly, them-du-an, sap-xep-thu-muc, ghi-bai-hoc, don-bo-nho, kiem-tra.",
     "developerName": "Agent Pro",
     "category": "Productivity"
   }

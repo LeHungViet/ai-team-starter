@@ -35,4 +35,4 @@
 |---|---|---|
 
 ## Bài học của dự án
-_(Mỗi dòng: luật — vì sao — ngày.)_
+Nằm trong [`bai-hoc.md`](bai-hoc.md) cùng thư mục — đọc trước khi làm việc với dự án.

@@ -1,11 +1,11 @@
 ---
 name: bat-dau
-description: Dựng file luật tối thiểu (AGENTS.md + CLAUDE.md) cho folder làm việc để AI hiểu người dùng là ai và làm việc theo cách nào. Dùng ngay sau khi cài AI Team Starter, khi folder chưa có AGENTS.md/CLAUDE.md, hoặc khi người dùng nói "bắt đầu", "setup", "dựng team AI", "tạo CLAUDE.md", "tạo AGENTS.md", "set up my AI team", "onboarding".
+description: Dựng file luật tối thiểu (AGENTS.md + CLAUDE.md) và bộ nhớ bo-nho/ cho folder làm việc để AI hiểu người dùng là ai và làm việc theo cách nào. Dùng ngay sau khi cài AI Team Starter, khi folder chưa có AGENTS.md/CLAUDE.md, hoặc khi người dùng nói "bắt đầu", "setup", "dựng team AI", "tạo CLAUDE.md", "tạo AGENTS.md", "set up my AI team", "onboarding".
 ---
 
 # bat-dau — Dựng file luật tối thiểu
 
-Mục tiêu: sau khoảng 2 phút, folder có **`AGENTS.md`** (bản luật duy nhất) và **`CLAUDE.md`** (chỉ import `AGENTS.md` + vài dòng riêng của Claude). Claude và Codex cùng đọc một nội dung; sửa một nơi là đủ.
+Mục tiêu: sau khoảng 2 phút, folder có **`AGENTS.md`** (hiến pháp — luật tổng quát duy nhất), **`CLAUDE.md`** (chỉ import `AGENTS.md` + vài dòng riêng của Claude) và **`bo-nho/`** (bộ nhớ: bài học, nhật ký phiên, việc đang dở). Claude và Codex cùng đọc một nội dung; sửa một nơi là đủ.
 
 Chỉ làm đúng phần tối thiểu này. Thêm trợ lý, dự án, sắp xếp thư mục là việc của skill khác; chỉ **gợi ý** chúng ở cuối.
 
@@ -18,6 +18,7 @@ Kiểm tra folder đang mở có `AGENTS.md`, `CLAUDE.md`, `.claude/CLAUDE.md`, 
   - Chỉ bổ sung phần còn thiếu so với mẫu (liệt kê cụ thể phần nào).
   - Viết lại theo mẫu này.
   Chỉ sửa khi người dùng đồng ý. Trước khi sửa, chép bản cũ vào `archive/<tên-file>-<YYYY-MM-DD>.md`.
+- **`AGENTS.md` do AI Team Starter 0.1 tạo** (có dòng "bằng AI Team Starter" và mục "## Bài học" / "## Ghi nhớ") → đề xuất nâng cấp lên bản có bộ nhớ: chép bản cũ vào `archive/`, chuyển các dòng bài học sang `bo-nho/bai-hoc.md`, thay mục "Ghi nhớ" + "Bài học" bằng Điều 6 và mục Thư mục mới của mẫu, thêm `luu-phien`/`don-bo-nho` vào bảng skill, giữ nguyên các phần người dùng đã điền. Chỉ làm khi người dùng đồng ý.
 - **Có `CLAUDE.md` mà không có `AGENTS.md`** và người dùng đồng ý chuyển → chuyển nội dung sang `AGENTS.md`, để `CLAUDE.md` chỉ còn `@AGENTS.md` + phần riêng của Claude.
 
 ## Bước 2 — Hỏi tối đa 5 câu
@@ -51,17 +52,19 @@ Người dùng trả lời "tuỳ bạn" hoặc bỏ qua câu nào → chọn m�
    Điền bằng câu trả lời thật. Viết bằng ngôn ngữ người dùng đã chọn (nếu là English thì dịch cả phần luật). Xoá mọi chỗ giữ chỗ `{{…}}`; không để lại chữ nào kiểu `[TÊN]`.
 3. Giữ `AGENTS.md` **dưới 200 dòng**. Luật viết cụ thể, kiểm được ("hỏi trước khi gửi email ra ngoài"), không viết chung chung ("làm việc tốt").
 4. Ghi `AGENTS.md` và `CLAUDE.md` vào gốc folder. Dòng nội dung đầu tiên của `CLAUDE.md` phải là `@AGENTS.md`.
+5. Tạo bộ nhớ (chưa có thì mới tạo, có rồi thì giữ nguyên): `bo-nho/BO-NHO.md` từ `templates/bo-nho/BO-NHO.template.md`, `bo-nho/bai-hoc.md` từ `templates/bo-nho/bai-hoc.template.md`, thư mục `bo-nho/nhat-ky/` (tạo file `.gitkeep` rỗng bên trong để thư mục không biến mất).
 
 ## Bước 4 — Kiểm tra rồi báo
 
-- Đọc lại hai file vừa ghi. Kiểm: không còn `{{`, `CLAUDE.md` có `@AGENTS.md`, `AGENTS.md` dưới 200 dòng.
-- Báo người dùng 3–5 dòng: đã tạo gì, AI sẽ làm việc với họ thế nào.
+- Đọc lại các file vừa ghi. Kiểm: không còn `{{`, `CLAUDE.md` có `@AGENTS.md`, `AGENTS.md` dưới 200 dòng, có `bo-nho/BO-NHO.md` và `bo-nho/bai-hoc.md`.
+- Báo người dùng 3–5 dòng: đã tạo gì, AI sẽ làm việc với họ thế nào. Nói rõ cách nhớ: cuối mỗi việc AI chạy `luu-phien` để ghi nhật ký và bài học vào `bo-nho/`; `AGENTS.md` chỉ đổi khi họ duyệt.
 - Nói rõ: file có hiệu lực đầy đủ từ **phiên mới**; muốn sửa thì mở `AGENTS.md` sửa trực tiếp hoặc nhờ AI sửa.
 - Gợi ý (không tự chạy), mỗi dòng một skill:
   - `/them-tro-ly` — thêm trợ lý có tên và chuyên môn riêng (marketing, tài chính…)
   - `/them-du-an` — tạo một dự án có tài liệu gốc
   - `/sap-xep-thu-muc` — dựng hoặc dọn cấu trúc thư mục
-  - `/ghi-bai-hoc` — ghi lại một luật rút ra từ sai lầm
+  - `/luu-phien` — lưu phiên: nhật ký, bài học, việc đang dở (AI tự chạy cuối mỗi việc)
+  - `/ghi-bai-hoc` — ghi ngay một bài học rút ra từ sai lầm
   - `/kiem-tra` — xem folder đang chạy đúng luật chưa
 
 Trên Codex, nếu lệnh gạch chéo không có thì gọi skill bằng tên (ví dụ `$them-tro-ly`) hoặc nói bằng lời.

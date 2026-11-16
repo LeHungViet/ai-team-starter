@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.0 — 2026-11-16
+- **Bộ nhớ riêng.** `AGENTS.md` thành hiến pháp: chỉ luật tổng quát, AI không tự sửa. Bài học và nhật ký chuyển sang `bo-nho/` (`BO-NHO.md`, `bai-hoc.md`, `nhat-ky/`) và `du-an/<tên>/bai-hoc.md`.
+- Skill mới `luu-phien`: cuối mỗi việc ghi nhật ký phiên, bài học vào đúng chỗ, việc đang dở, trạng thái dự án.
+- Skill mới `don-bo-nho`: gộp bài học trùng, tóm tắt nhật ký cũ theo tháng (bản gốc vào `archive/`), đề xuất bài học nâng thành luật.
+- Hook `nhac-luu-phien.sh` (SessionStart + SessionEnd): phiên kết thúc mà chưa lưu → phiên sau nhắc lưu bù từ transcript, đúng một lần.
+- `ghi-bai-hoc` ghi vào bộ nhớ, không vào `AGENTS.md`; `them-du-an` tạo thêm `bai-hoc.md`; `kiem-tra` kiểm thêm hiến pháp gọn và bộ nhớ có được lưu đều; `bat-dau` tạo `bo-nho/` và nâng cấp folder dựng bằng bản 0.1.
+
 ## 0.1.2 — 2026-11-16
 - Hook: trên phiên cloud của app Claude (không có folder thật, không nhớ được "đã mời") chỉ nhắc AI mời khi phiên có folder người dùng chưa có file luật; không mời ở mọi chat mới nữa.
 
