@@ -1,12 +1,20 @@
 {
   "name": "ai-team-starter",
-  "description": "AI Team Starter — dựng đội AI riêng trong folder làm việc.",
-  "owner": { "name": "Agent Pro", "url": "https://agentpro.tech" },
+  "description": "AI Team Starter — set up your own AI team in a working folder. Two editions: ai-team (Tiếng Việt) and ai-team-en (English). Install one.",
+  "owner": {
+    "name": "Agent Pro",
+    "url": "https://agentpro.tech"
+  },
   "plugins": [
     {
       "name": "ai-team",
       "source": "./plugins/ai-team",
-      "description": "File luật AGENTS.md/CLAUDE.md, trợ lý có tên, dự án có nguồn sự thật. Cài xong, AI tự mời bạn setup."
+      "description": "Bản tiếng Việt — hiến pháp AGENTS.md/CLAUDE.md, bộ nhớ bo-nho/ tự lưu bài học mỗi phiên, trợ lý có tên, dự án có nguồn sự thật. Cài xong, AI tự mời bạn setup."
+    },
+    {
+      "name": "ai-team-en",
+      "source": "./plugins/ai-team-en",
+      "description": "English edition — AGENTS.md/CLAUDE.md constitution, a memory/ folder that saves lessons every session, named assistants, projects with a source of truth. Right after install, the agent offers setup."
     }
   ]
 }

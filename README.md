@@ -4,13 +4,20 @@ Dựng **đội AI riêng** trong folder làm việc của bạn — chạy đư
 
 Cài xong, AI tự mời bạn trả lời vài câu (tối đa 5), rồi viết sẵn file luật **`AGENTS.md`** cho folder. Từ đó, mỗi phiên AI đều biết bạn là ai, làm việc theo cách nào, việc gì phải hỏi trước. Các thứ khác — trợ lý có tên riêng, dự án, sắp xếp thư mục — bạn gọi thêm khi cần.
 
-*English summary at the end.*
+**Hai bản / Two editions** — cài **một** trong hai / install **one**:
+
+| Plugin | Ngôn ngữ / Language | Skill |
+|---|---|---|
+| `ai-team` | Tiếng Việt | `bat-dau`, `them-tro-ly`, `them-du-an`, `sap-xep-thu-muc`, `luu-phien`, `ghi-bai-hoc`, `don-bo-nho`, `kiem-tra` |
+| `ai-team-en` | English | `setup`, `add-assistant`, `add-project`, `organize-folder`, `save-session`, `add-lesson`, `tidy-memory`, `health-check` |
+
+Cả hai bản trò chuyện được bằng mọi ngôn ngữ; bản chỉ quyết định tên skill, tên thư mục và ngôn ngữ mặc định của file luật. Cài cả hai sẽ bị mời setup hai lần.
+
+*English guide at the end.*
 
 ---
 
 ## Cài đặt
-
-> Thay `LeHungViet` bằng tài khoản GitHub chứa repo này.
 
 **Claude Code**
 
@@ -18,6 +25,8 @@ Cài xong, AI tự mời bạn trả lời vài câu (tối đa 5), rồi viết
 /plugin marketplace add LeHungViet/ai-team-starter
 /plugin install ai-team@ai-team-starter
 ```
+
+(Bản tiếng Anh: `/plugin install ai-team-en@ai-team-starter`.)
 
 Mở phiên mới trong folder bạn muốn dùng.
 
@@ -90,9 +99,41 @@ folder-cua-ban/
 
 ---
 
-## English summary
+## English guide
 
-**AI Team Starter** sets up a personal AI team in your working folder, for Claude (Claude Code, Claude desktop) and Codex. Right after install, the agent offers a short onboarding (up to 5 questions) and writes a single rules file, `AGENTS.md`, plus a `CLAUDE.md` that just imports it — so Claude and Codex share one source of rules. Optional skills: `them-tro-ly` (add a named assistant/persona), `them-du-an` (create a project with a source-of-truth brief), `sap-xep-thu-muc` (organize folders, never deletes), `ghi-bai-hoc` (record a rule that must always hold), `kiem-tra` (read-only health check). Skill names are Vietnamese; skills understand English requests too. `AGENTS.md` is kept as a short constitution the agent never edits on its own; lessons and session logs live in a `bo-nho/` memory folder. `luu-phien` saves each session (log, lessons, open items), a SessionStart/SessionEnd hook catches sessions that ended unsaved, and `don-bo-nho` consolidates periodically.
+**AI Team Starter** sets up a personal AI team in your working folder, for Claude (Claude Code, the Claude app) and Codex. Install the **English edition `ai-team-en`**.
+
+**Install**
+
+- Claude Code: `/plugin marketplace add LeHungViet/ai-team-starter` then `/plugin install ai-team-en@ai-team-starter`. Open a new session in your working folder.
+- Claude app: Customize → Plugins → Add → Add marketplace → Add from a repository → `LeHungViet/ai-team-starter` → install **ai-team-en**. To update: Manage marketplaces → … → Check for updates.
+- Codex: `codex plugin marketplace add LeHungViet/ai-team-starter`, then in the Codex app open Plugins, search "AI Team", install **AI Team Starter (English)**, press **Try now**, **choose your project folder**, and send. CLI: `codex plugin add ai-team-en@ai-team-starter`; skills are named `ai-team-en:setup`, `ai-team-en:save-session`…; the hooks run after you trust them once.
+
+**What you get**
+
+```
+your-folder/
+├── AGENTS.md          ← constitution: general rules only (the single rules file)
+├── CLAUDE.md          ← @AGENTS.md
+├── memory/
+│   ├── MEMORY.md      ← index + open items
+│   ├── lessons.md     ← general lessons
+│   └── sessions/      ← one log per session
+├── assistants/mia.md  ← one file per named assistant
+├── projects/<name>/
+│   ├── BRIEF.md       ← goal, status, SOURCE OF TRUTH
+│   └── lessons.md     ← project lessons
+└── archive/           ← cleaned-up items; nothing is deleted
+```
+
+**Skills:** `setup` (rules + memory, runs first) · `add-assistant` · `add-project` · `organize-folder` (proposes first, never deletes) · `save-session` (log, lessons, open items — the agent runs it at the end of each task) · `add-lesson` · `tidy-memory` (merge, summarize, propose rule promotions) · `health-check` (read-only).
+
+**Why this design**
+
+- **One constitution, two platforms.** `AGENTS.md` holds short, general rules shared by Claude and Codex; the agent never edits it on its own.
+- **A real memory layer.** Built-in memory isn't shared between Claude and Codex and often misses lessons, so lessons and session logs live in `memory/` and each project's `lessons.md`. A SessionStart/SessionEnd hook catches sessions that ended unsaved and has the next session save them from the transcript.
+- **Source of truth in the brief.** For code projects the BRIEF says where the code lives, where the live version runs and how to deploy.
+- **Ask only when it matters:** spending money, sending things outside, or anything irreversible.
 
 ## License
 

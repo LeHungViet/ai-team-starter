@@ -1,11 +1,31 @@
 {
   "name": "ai-team-starter",
-  "interface": { "displayName": "AI Team Starter" },
+  "interface": {
+    "displayName": "AI Team Starter"
+  },
   "plugins": [
     {
       "name": "ai-team",
-      "source": { "source": "local", "path": "./plugins/ai-team" },
-      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "source": {
+        "source": "local",
+        "path": "./plugins/ai-team"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "ai-team-en",
+      "source": {
+        "source": "local",
+        "path": "./plugins/ai-team-en"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
       "category": "Productivity"
     }
   ]

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.1 — 2026-11-16
+- **Bản tiếng Anh `ai-team-en`** (English edition): cùng tính năng với bản tiếng Việt; skill `setup`, `add-assistant`, `add-project`, `organize-folder`, `save-session`, `add-lesson`, `tidy-memory`, `health-check`; thư mục `memory/`, `projects/`, `assistants/`, `docs/`. Cài **một trong hai** bản.
+- Bản tiếng Việt `ai-team`: `sap-xep-thu-muc` thêm `bo-nho/` vào cấu trúc chuẩn; tên hiển thị trên Codex thành "AI Team Starter (Tiếng Việt)".
+
 ## 0.2.0 — 2026-11-16
 - **Bộ nhớ riêng.** `AGENTS.md` thành hiến pháp: chỉ luật tổng quát, AI không tự sửa. Bài học và nhật ký chuyển sang `bo-nho/` (`BO-NHO.md`, `bai-hoc.md`, `nhat-ky/`) và `du-an/<tên>/bai-hoc.md`.
 - Skill mới `luu-phien`: cuối mỗi việc ghi nhật ký phiên, bài học vào đúng chỗ, việc đang dở, trạng thái dự án.

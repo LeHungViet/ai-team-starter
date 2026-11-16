@@ -9,9 +9,10 @@ description: Dựng cấu trúc thư mục gọn cho folder làm việc, hoặc 
 
 ```
 <folder>/
-├── AGENTS.md        ← luật (bản duy nhất)
+├── AGENTS.md        ← hiến pháp (bản luật duy nhất)
 ├── CLAUDE.md        ← chỉ import AGENTS.md
-├── du-an/<ten>/     ← mỗi dự án một thư mục, có BRIEF.md
+├── bo-nho/          ← BO-NHO.md, bai-hoc.md, nhat-ky/
+├── du-an/<ten>/     ← mỗi dự án một thư mục, có BRIEF.md + bai-hoc.md
 ├── tro-ly/          ← mỗi trợ lý một file
 ├── tai-lieu/        ← tài liệu dùng chung, không thuộc dự án nào
 └── archive/         ← thứ đã dọn; không xoá gì

@@ -1,0 +1,29 @@
+{
+  "name": "ai-team-en",
+  "version": "0.2.1",
+  "description": "AI Team Starter (English) — AGENTS.md constitution, named assistants, projects with a source of truth, and a memory folder that saves lessons every session.",
+  "author": {
+    "name": "Agent Pro",
+    "url": "https://agentpro.tech"
+  },
+  "homepage": "https://github.com/LeHungViet/ai-team-starter",
+  "repository": "https://github.com/LeHungViet/ai-team-starter",
+  "license": "MIT",
+  "keywords": [
+    "onboarding",
+    "agents-md",
+    "ai-team",
+    "memory",
+    "english"
+  ],
+  "skills": "./skills/",
+  "hooks": "./hooks/hooks.json",
+  "onboardingSkill": "./skills/setup/SKILL.md",
+  "interface": {
+    "displayName": "AI Team Starter (English)",
+    "shortDescription": "Set up an AGENTS.md constitution, a memory folder and named AI assistants for your working folder",
+    "longDescription": "After install, Codex asks you a few questions, then writes AGENTS.md (your constitution) and a memory/ folder. At the end of each task the agent runs save-session to log the session and its lessons. Add more when you need it: add-assistant, add-project, organize-folder, add-lesson, tidy-memory, health-check.",
+    "developerName": "Agent Pro",
+    "category": "Productivity"
+  }
+}
